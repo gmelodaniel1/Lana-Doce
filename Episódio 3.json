@@ -1,0 +1,165 @@
+{
+  "episode": 3,
+  "title": "Em Busca do Hotspot Perfeito",
+  "startingNodeId": "ep3_01",
+  "nodes": {
+    "ep3_01": {
+      "id": "ep3_01",
+      "speaker": "Narrador",
+      "characterId": null,
+      "expression": null,
+      "background": "central_room",
+      "text": "Manhã movimentada no LANA. O grupo de pesquisa em Doença de Parkinson está reunido perto das salas de rTMS preparando a recepção de um paciente voluntário.",
+      "next": "ep3_02"
+    },
+    "ep3_02": {
+      "id": "ep3_02",
+      "speaker": "João",
+      "characterId": "joao",
+      "expression": "focused",
+      "background": "central_room",
+      "text": "Cronômetro pronto e fichas clínicas revisadas. Cecília, as meninas já terminaram de organizar a cadeira reclinável da Sala 2 de TMS?",
+      "next": "ep3_03"
+    },
+    "ep3_03": {
+      "id": "ep3_03",
+      "speaker": "Cecília",
+      "characterId": "cecilia",
+      "expression": "happy",
+      "background": "central_room",
+      "text": "Sim! A Olga e a Alana deixaram tudo impecável. Que bom que você chegou, precisamos de mais um par de mãos para ajudar na marcação da touca e na busca do limiar motor hoje!",
+      "next": "ep3_04"
+    },
+    "ep3_04": {
+      "id": "ep3_04",
+      "speaker": "Olga",
+      "characterId": "olga",
+      "expression": "happy",
+      "background": "tms_room",
+      "text": "Oi! A gente já posicionou a touca no voluntário e mediu o vértex...",
+      "next": "ep3_05"
+    },
+    "ep3_05": {
+      "id": "ep3_05",
+      "speaker": "Alana",
+      "characterId": "alana",
+      "expression": "neutral",
+      "background": "tms_room",
+      "text": "...e já deixamos o braço mecânico destravado pra você ajudar a posicionar a bobina em figura de oito!",
+      "choices": [
+        {
+          "text": "Vocês duas têm uma sintonia incrível! Vamos achar esse hotspot motor rapidinho.",
+          "lomChange": { "olga": 5, "alana": 5, "joao": 5, "cecilia": 5 },
+          "next": "ep3_parkinson_a"
+        },
+        {
+          "text": "Perfeito. Vou ajustar a bobina a 45 graus da linha média e observar a contração na mão contralateral.",
+          "lomChange": { "joao": 5, "cecilia": 5, "olga": 0, "alana": 0 },
+          "next": "ep3_parkinson_b"
+        },
+        {
+          "text": "Esse braço mecânico do TMS é meio duro de mexer, tomara que não caia na cabeça dele.",
+          "lomChange": { "joao": -5, "cecilia": -5, "olga": -5, "alana": -5 },
+          "next": "ep3_parkinson_c"
+        }
+      ]
+    },
+    "ep3_parkinson_a": {
+      "id": "ep3_parkinson_a",
+      "speaker": "Alana",
+      "characterId": "alana",
+      "expression": "happy",
+      "background": "tms_room",
+      "text": "Obrigada! Trabalhar em dupla com a Olga deixa qualquer coleta mais leve mesmo!",
+      "next": "ep3_katia_01"
+    },
+    "ep3_parkinson_b": {
+      "id": "ep3_parkinson_b",
+      "speaker": "João",
+      "characterId": "joao",
+      "expression": "happy",
+      "background": "tms_room",
+      "text": "Exatamente o ângulo correto para atingir o córtex motor primário. Pode disparar o pulso de teste.",
+      "next": "ep3_katia_01"
+    },
+    "ep3_parkinson_c": {
+      "id": "ep3_parkinson_c",
+      "speaker": "Cecília",
+      "characterId": "cecilia",
+      "expression": "strict",
+      "background": "tms_room",
+      "text": "Ei! Nunca fale uma coisa dessas na frente do paciente! Mantenha a calma e segure a bobina com firmeza.",
+      "next": "ep3_katia_01"
+    },
+    "ep3_katia_01": {
+      "id": "ep3_katia_01",
+      "speaker": "Narrador",
+      "characterId": null,
+      "expression": null,
+      "background": "tms_room",
+      "text": "TEC! O pulso magnético estala na sala e o polegar do voluntário dá um leve abalo visível. De repente, a porta se abre silenciosamente. É a Profa. Kátia, coordenadora do LANA.",
+      "next": "ep3_katia_02"
+    },
+    "ep3_katia_02": {
+      "id": "ep3_katia_02",
+      "speaker": "Profa. Kátia",
+      "characterId": "katia",
+      "expression": "neutral",
+      "background": "tms_room",
+      "text": "(Com voz suave, serena e quase sussurrada, fazendo todos ficarem em silêncio imediato): Bom dia, pessoal. Vejo que já encontraram o hotspot motor. Qual foi o Limiar Motor de Repouso que vocês registraram para iniciar o protocolo?",
+      "choices": [
+        {
+          "text": "(Responder em tom calmo e seguro): Bom dia, Profa. Kátia. Estabilizamos em 54% da potência máxima, com resposta consistente em 5 de 10 pulsos.",
+          "lomChange": { "katia": 10, "joao": 5, "cecilia": 5 },
+          "next": "ep3_katia_a"
+        },
+        {
+          "text": "(Olhar para o João e a Cecília esperando que eles respondam pela equipe).",
+          "lomChange": { "katia": 0 },
+          "next": "ep3_katia_b"
+        },
+        {
+          "text": "(Falar alto de empolgação): Achamos de primeira, Professora! O dedo dele mexeu certinho no estalo!",
+          "lomChange": { "katia": -5 },
+          "next": "ep3_katia_c"
+        }
+      ]
+    },
+    "ep3_katia_a": {
+      "id": "ep3_katia_a",
+      "speaker": "Profa. Kátia",
+      "characterId": "katia",
+      "expression": "happy",
+      "background": "tms_room",
+      "text": "Excelente precisão técnica e cuidado com o paciente. Vejo que você se integrou muito bem ao LANA. Continuem o bom trabalho.",
+      "next": "ep3_end_copa"
+    },
+    "ep3_katia_b": {
+      "id": "ep3_katia_b",
+      "speaker": "Profa. Kátia",
+      "characterId": "katia",
+      "expression": "analytical",
+      "background": "tms_room",
+      "text": "Certo, João me passou os parâmetros aqui na ficha. Acompanhe com atenção cada etapa da estimulação.",
+      "next": "ep3_end_copa"
+    },
+    "ep3_katia_c": {
+      "id": "ep3_katia_c",
+      "speaker": "Profa. Kátia",
+      "characterId": "katia",
+      "expression": "disappointed",
+      "background": "tms_room",
+      "text": "(Mantendo o tom sereno e baixo): Lembrem-se de manter a voz baixa dentro da sala de estimulação para não alterar o estado de relaxamento cortical do paciente.",
+      "next": "ep3_end_copa"
+    },
+    "ep3_end_copa": {
+      "id": "ep3_end_copa",
+      "speaker": "Letícia",
+      "characterId": "leticia",
+      "expression": "joyful",
+      "background": "copa",
+      "text": "Sobreviveu à supervisão da Profa. Kátia na sala de TMS?! Isso merece comemoração oficial na Copa! Trouxe cuscuz quentinho e o Will já tá pronto pra comentar a semana inteira!",
+      "next": null
+    }
+  }
+}

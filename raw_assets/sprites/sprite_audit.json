@@ -1,0 +1,1204 @@
+{
+  "alana": [
+    {
+      "file": "AlanaSprites.jfif",
+      "character_id": "alana",
+      "size": [
+        1024,
+        572
+      ],
+      "aspect_ratio": 1.79,
+      "corner_colors": [
+        [
+          253,
+          253,
+          253
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          254,
+          254,
+          254
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 15,
+        "y_min": 39,
+        "x_max": 1010,
+        "y_max": 559
+      },
+      "num_heads_detected": 4,
+      "head_spans": [
+        [
+          49,
+          219
+        ],
+        [
+          296,
+          465
+        ],
+        [
+          558,
+          727
+        ],
+        [
+          808,
+          977
+        ]
+      ],
+      "gaps_between_heads": [
+        77,
+        93,
+        81
+      ],
+      "num_torsos_detected": 4,
+      "gaps_between_torsos": [
+        47,
+        5,
+        12
+      ],
+      "layout_type": "horizontal_touching_4",
+      "overlap_severity": "touching_mild"
+    }
+  ],
+  "alex": [
+    {
+      "file": "AlexSprites.jfif",
+      "character_id": "alex",
+      "size": [
+        1024,
+        506
+      ],
+      "aspect_ratio": 2.02,
+      "corner_colors": [
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 25,
+        "y_min": 24,
+        "x_max": 999,
+        "y_max": 497
+      },
+      "num_heads_detected": 4,
+      "head_spans": [
+        [
+          46,
+          212
+        ],
+        [
+          302,
+          451
+        ],
+        [
+          552,
+          712
+        ],
+        [
+          760,
+          980
+        ]
+      ],
+      "gaps_between_heads": [
+        90,
+        101,
+        48
+      ],
+      "num_torsos_detected": 4,
+      "gaps_between_torsos": [
+        46,
+        49,
+        60
+      ],
+      "layout_type": "clean_horizontal_4",
+      "overlap_severity": "none"
+    }
+  ],
+  "beca": [
+    {
+      "file": "BecaSprites.jfif",
+      "character_id": "beca",
+      "size": [
+        1024,
+        572
+      ],
+      "aspect_ratio": 1.79,
+      "corner_colors": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          253,
+          253,
+          253
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 29,
+        "y_min": 70,
+        "x_max": 1009,
+        "y_max": 554
+      },
+      "num_heads_detected": 4,
+      "head_spans": [
+        [
+          49,
+          235
+        ],
+        [
+          302,
+          485
+        ],
+        [
+          548,
+          758
+        ],
+        [
+          795,
+          976
+        ]
+      ],
+      "gaps_between_heads": [
+        67,
+        63,
+        37
+      ],
+      "num_torsos_detected": 4,
+      "gaps_between_torsos": [
+        32,
+        14,
+        27
+      ],
+      "layout_type": "horizontal_touching_4",
+      "overlap_severity": "touching_mild"
+    }
+  ],
+  "ben_luis": [
+    {
+      "file": "BenSprites.jfif",
+      "character_id": "ben_luis",
+      "size": [
+        1024,
+        687
+      ],
+      "aspect_ratio": 1.49,
+      "corner_colors": [
+        [
+          253,
+          253,
+          253
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 25,
+        "y_min": 42,
+        "x_max": 999,
+        "y_max": 668
+      },
+      "num_heads_detected": 4,
+      "head_spans": [
+        [
+          50,
+          360
+        ],
+        [
+          381,
+          609
+        ],
+        [
+          633,
+          708
+        ],
+        [
+          721,
+          983
+        ]
+      ],
+      "gaps_between_heads": [
+        21,
+        24,
+        13
+      ],
+      "num_torsos_detected": 3,
+      "gaps_between_torsos": [
+        59,
+        48
+      ],
+      "layout_type": "horizontal_touching_4",
+      "overlap_severity": "touching_mild"
+    },
+    {
+      "file": "LuisSprites.jfif",
+      "character_id": "ben_luis",
+      "size": [
+        552,
+        1024
+      ],
+      "aspect_ratio": 0.54,
+      "corner_colors": [
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 8,
+        "y_min": 31,
+        "x_max": 544,
+        "y_max": 1023
+      },
+      "num_heads_detected": 2,
+      "head_spans": [
+        [
+          24,
+          274
+        ],
+        [
+          285,
+          544
+        ]
+      ],
+      "gaps_between_heads": [
+        11
+      ],
+      "num_torsos_detected": 2,
+      "gaps_between_torsos": [
+        10
+      ],
+      "layout_type": "grid_2x2_vertical",
+      "overlap_severity": "requires_box_slicing"
+    }
+  ],
+  "cecilia": [
+    {
+      "file": "CeciliaSprites.jfif",
+      "character_id": "cecilia",
+      "size": [
+        1024,
+        572
+      ],
+      "aspect_ratio": 1.79,
+      "corner_colors": [
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 8,
+        "y_min": 55,
+        "x_max": 991,
+        "y_max": 535
+      },
+      "num_heads_detected": 5,
+      "head_spans": [
+        [
+          44,
+          171
+        ],
+        [
+          267,
+          400
+        ],
+        [
+          447,
+          574
+        ],
+        [
+          649,
+          777
+        ],
+        [
+          851,
+          969
+        ]
+      ],
+      "gaps_between_heads": [
+        96,
+        47,
+        75,
+        74
+      ],
+      "num_torsos_detected": 5,
+      "gaps_between_torsos": [
+        3,
+        24,
+        11,
+        14
+      ],
+      "layout_type": "horizontal_touching_5",
+      "overlap_severity": "touching_mild"
+    }
+  ],
+  "daniel": [
+    {
+      "file": "DanielSprites.jfif",
+      "character_id": "daniel",
+      "size": [
+        1024,
+        572
+      ],
+      "aspect_ratio": 1.79,
+      "corner_colors": [
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          254,
+          254,
+          254
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 1,
+        "y_min": 33,
+        "x_max": 1018,
+        "y_max": 469
+      },
+      "num_heads_detected": 4,
+      "head_spans": [
+        [
+          41,
+          175
+        ],
+        [
+          229,
+          574
+        ],
+        [
+          645,
+          786
+        ],
+        [
+          840,
+          976
+        ]
+      ],
+      "gaps_between_heads": [
+        54,
+        71,
+        54
+      ],
+      "num_torsos_detected": 2,
+      "gaps_between_torsos": [
+        7
+      ],
+      "layout_type": "horizontal_touching_4",
+      "overlap_severity": "touching_mild"
+    }
+  ],
+  "fernanda": [
+    {
+      "file": "FernandaSprites.jfif",
+      "character_id": "fernanda",
+      "size": [
+        1024,
+        572
+      ],
+      "aspect_ratio": 1.79,
+      "corner_colors": [
+        [
+          253,
+          253,
+          253
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 5,
+        "y_min": 68,
+        "x_max": 1011,
+        "y_max": 571
+      },
+      "num_heads_detected": 5,
+      "head_spans": [
+        [
+          33,
+          192
+        ],
+        [
+          221,
+          407
+        ],
+        [
+          451,
+          618
+        ],
+        [
+          645,
+          804
+        ],
+        [
+          848,
+          1004
+        ]
+      ],
+      "gaps_between_heads": [
+        29,
+        44,
+        27,
+        44
+      ],
+      "num_torsos_detected": 3,
+      "gaps_between_torsos": [
+        2,
+        3
+      ],
+      "layout_type": "horizontal_touching_5",
+      "overlap_severity": "touching_mild"
+    }
+  ],
+  "gabs": [
+    {
+      "file": "GabsSprites.jfif",
+      "character_id": "gabs",
+      "size": [
+        1024,
+        572
+      ],
+      "aspect_ratio": 1.79,
+      "corner_colors": [
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          254,
+          254,
+          254
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 14,
+        "y_min": 22,
+        "x_max": 1014,
+        "y_max": 552
+      },
+      "num_heads_detected": 4,
+      "head_spans": [
+        [
+          38,
+          234
+        ],
+        [
+          289,
+          489
+        ],
+        [
+          554,
+          744
+        ],
+        [
+          783,
+          994
+        ]
+      ],
+      "gaps_between_heads": [
+        55,
+        65,
+        39
+      ],
+      "num_torsos_detected": 4,
+      "gaps_between_torsos": [
+        32,
+        17,
+        14
+      ],
+      "layout_type": "horizontal_touching_4",
+      "overlap_severity": "touching_mild"
+    }
+  ],
+  "joao": [
+    {
+      "file": "JoaoSprites.jfif",
+      "character_id": "joao",
+      "size": [
+        1024,
+        572
+      ],
+      "aspect_ratio": 1.79,
+      "corner_colors": [
+        [
+          253,
+          253,
+          253
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          254,
+          254,
+          254
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 12,
+        "y_min": 44,
+        "x_max": 1013,
+        "y_max": 550
+      },
+      "num_heads_detected": 4,
+      "head_spans": [
+        [
+          37,
+          246
+        ],
+        [
+          299,
+          502
+        ],
+        [
+          525,
+          555
+        ],
+        [
+          578,
+          1002
+        ]
+      ],
+      "gaps_between_heads": [
+        53,
+        23,
+        23
+      ],
+      "num_torsos_detected": 4,
+      "gaps_between_torsos": [
+        10,
+        1,
+        26
+      ],
+      "layout_type": "horizontal_touching_4",
+      "overlap_severity": "touching_mild"
+    }
+  ],
+  "katia": [
+    {
+      "file": "KatiaSprites.jfif",
+      "character_id": "katia",
+      "size": [
+        1024,
+        506
+      ],
+      "aspect_ratio": 2.02,
+      "corner_colors": [
+        [
+          253,
+          253,
+          253
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          253,
+          253,
+          253
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 22,
+        "y_min": 26,
+        "x_max": 1013,
+        "y_max": 501
+      },
+      "num_heads_detected": 4,
+      "head_spans": [
+        [
+          48,
+          210
+        ],
+        [
+          308,
+          458
+        ],
+        [
+          559,
+          714
+        ],
+        [
+          806,
+          957
+        ]
+      ],
+      "gaps_between_heads": [
+        98,
+        101,
+        92
+      ],
+      "num_torsos_detected": 4,
+      "gaps_between_torsos": [
+        44,
+        61,
+        52
+      ],
+      "layout_type": "clean_horizontal_4",
+      "overlap_severity": "none"
+    }
+  ],
+  "leticia": [
+    {
+      "file": "LeticiaSprites.jfif",
+      "character_id": "leticia",
+      "size": [
+        1024,
+        687
+      ],
+      "aspect_ratio": 1.49,
+      "corner_colors": [
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          254,
+          254,
+          254
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 19,
+        "y_min": 35,
+        "x_max": 1007,
+        "y_max": 671
+      },
+      "num_heads_detected": 4,
+      "head_spans": [
+        [
+          27,
+          237
+        ],
+        [
+          282,
+          485
+        ],
+        [
+          533,
+          767
+        ],
+        [
+          798,
+          1002
+        ]
+      ],
+      "gaps_between_heads": [
+        45,
+        48,
+        31
+      ],
+      "num_torsos_detected": 4,
+      "gaps_between_torsos": [
+        29,
+        37,
+        19
+      ],
+      "layout_type": "clean_horizontal_4",
+      "overlap_severity": "none"
+    }
+  ],
+  "olga": [
+    {
+      "file": "OlgaSprites.jpg",
+      "character_id": "olga",
+      "size": [
+        1024,
+        572
+      ],
+      "aspect_ratio": 1.79,
+      "corner_colors": [
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          254,
+          254,
+          254
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 22,
+        "y_min": 36,
+        "x_max": 1009,
+        "y_max": 564
+      },
+      "num_heads_detected": 6,
+      "head_spans": [
+        [
+          42,
+          214
+        ],
+        [
+          280,
+          446
+        ],
+        [
+          476,
+          511
+        ],
+        [
+          541,
+          711
+        ],
+        [
+          738,
+          779
+        ],
+        [
+          795,
+          965
+        ]
+      ],
+      "gaps_between_heads": [
+        66,
+        30,
+        30,
+        27,
+        16
+      ],
+      "num_torsos_detected": 4,
+      "gaps_between_torsos": [
+        41,
+        27,
+        14
+      ],
+      "layout_type": "horizontal_touching_6",
+      "overlap_severity": "touching_mild"
+    }
+  ],
+  "protagonist": [],
+  "rhayssa": [
+    {
+      "file": "RhayssaSprites.jfif",
+      "character_id": "rhayssa",
+      "size": [
+        1024,
+        1010
+      ],
+      "aspect_ratio": 1.01,
+      "corner_colors": [
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          254,
+          254,
+          254
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 3,
+        "y_min": 45,
+        "x_max": 1011,
+        "y_max": 836
+      },
+      "num_heads_detected": 2,
+      "head_spans": [
+        [
+          64,
+          299
+        ],
+        [
+          307,
+          1011
+        ]
+      ],
+      "gaps_between_heads": [
+        8
+      ],
+      "num_torsos_detected": 1,
+      "gaps_between_torsos": [],
+      "layout_type": "grid_2x2_vertical",
+      "overlap_severity": "requires_box_slicing"
+    }
+  ],
+  "samara": [
+    {
+      "file": "SamaraSprites.jfif",
+      "character_id": "samara",
+      "size": [
+        1024,
+        975
+      ],
+      "aspect_ratio": 1.05,
+      "corner_colors": [
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          254,
+          254,
+          254
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 35,
+        "y_min": 163,
+        "x_max": 1003,
+        "y_max": 865
+      },
+      "num_heads_detected": 4,
+      "head_spans": [
+        [
+          64,
+          263
+        ],
+        [
+          298,
+          497
+        ],
+        [
+          546,
+          765
+        ],
+        [
+          808,
+          992
+        ]
+      ],
+      "gaps_between_heads": [
+        35,
+        49,
+        43
+      ],
+      "num_torsos_detected": 6,
+      "gaps_between_torsos": [
+        7,
+        3,
+        31,
+        21,
+        14
+      ],
+      "layout_type": "grid_2x2_vertical",
+      "overlap_severity": "requires_box_slicing"
+    }
+  ],
+  "sergio": [
+    {
+      "file": "SergioSprites.jfif",
+      "character_id": "sergio",
+      "size": [
+        1024,
+        572
+      ],
+      "aspect_ratio": 1.79,
+      "corner_colors": [
+        [
+          253,
+          253,
+          253
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 9,
+        "y_min": 66,
+        "x_max": 1014,
+        "y_max": 571
+      },
+      "num_heads_detected": 5,
+      "head_spans": [
+        [
+          56,
+          203
+        ],
+        [
+          253,
+          413
+        ],
+        [
+          452,
+          596
+        ],
+        [
+          644,
+          815
+        ],
+        [
+          858,
+          994
+        ]
+      ],
+      "gaps_between_heads": [
+        50,
+        39,
+        48,
+        43
+      ],
+      "num_torsos_detected": 2,
+      "gaps_between_torsos": [
+        14
+      ],
+      "layout_type": "horizontal_touching_5",
+      "overlap_severity": "touching_mild"
+    }
+  ],
+  "will": [
+    {
+      "file": "WillSprites.jpg",
+      "character_id": "will",
+      "size": [
+        1024,
+        506
+      ],
+      "aspect_ratio": 2.02,
+      "corner_colors": [
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          254,
+          254,
+          254
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "content_bounds": {
+        "x_min": 18,
+        "y_min": 22,
+        "x_max": 1006,
+        "y_max": 502
+      },
+      "num_heads_detected": 4,
+      "head_spans": [
+        [
+          43,
+          219
+        ],
+        [
+          305,
+          471
+        ],
+        [
+          554,
+          722
+        ],
+        [
+          807,
+          987
+        ]
+      ],
+      "gaps_between_heads": [
+        86,
+        83,
+        85
+      ],
+      "num_torsos_detected": 4,
+      "gaps_between_torsos": [
+        9,
+        29,
+        45
+      ],
+      "layout_type": "horizontal_touching_4",
+      "overlap_severity": "touching_mild"
+    }
+  ]
+}

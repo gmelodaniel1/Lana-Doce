@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Configuração de corte cirúrgico para sprites complexos e sobrepostos do Lana Doce",
+  "characters": {
+    "fernanda": {
+      "character_id": "fernanda",
+      "name": "Fernanda",
+      "file": "FernandaSprites.jfif",
+      "layout": "horizontal_strips",
+      "cuts": [0, 212, 438, 621, 826, 1024],
+      "expressions": ["neutral", "teasing", "eye_roll", "warm", "extra"],
+      "collisions": [
+        {"cut_index": 1, "x": 212, "overlap_pixels": 26, "severity": "mild", "region": "braço/cotovelo"},
+        {"cut_index": 2, "x": 438, "overlap_pixels": 15, "severity": "minimal", "region": "extremidade da mão"},
+        {"cut_index": 3, "x": 621, "overlap_pixels": 30, "severity": "mild", "region": "cotovelo esquerdo"},
+        {"cut_index": 4, "x": 826, "overlap_pixels": 16, "severity": "minimal", "region": "ponta dos dedos"}
+      ]
+    },
+    "sergio": {
+      "character_id": "sergio",
+      "name": "Sérgio (Robozão)",
+      "file": "SergioSprites.jfif",
+      "layout": "horizontal_strips",
+      "cuts": [0, 244, 420, 626, 805, 1024],
+      "expressions": ["neutral", "laughing", "robotic_blank", "chill", "extra"],
+      "collisions": [
+        {"cut_index": 1, "x": 244, "overlap_pixels": 105, "severity": "medium", "region": "antebraço e jaleco"},
+        {"cut_index": 2, "x": 420, "overlap_pixels": 93, "severity": "medium", "region": "costas e ombro"},
+        {"cut_index": 3, "x": 626, "overlap_pixels": 72, "severity": "medium", "region": "mão no bolso e lateral"},
+        {"cut_index": 4, "x": 805, "overlap_pixels": 41, "severity": "mild", "region": "lateral do quadril"}
+      ]
+    },
+    "daniel": {
+      "character_id": "daniel",
+      "name": "Daniel",
+      "file": "DanielSprites.jfif",
+      "layout": "horizontal_strips",
+      "cuts": [0, 176, 421, 609, 774, 1024],
+      "expressions": ["neutral", "chaotic_excited", "laughing", "awkward", "extra"],
+      "collisions": [
+        {"cut_index": 1, "x": 176, "overlap_pixels": 45, "severity": "mild", "region": "braço aberto gesticulando"},
+        {"cut_index": 2, "x": 421, "overlap_pixels": 37, "severity": "mild", "region": "antebraço"},
+        {"cut_index": 3, "x": 609, "overlap_pixels": 0, "severity": "none", "region": "livre"},
+        {"cut_index": 4, "x": 774, "overlap_pixels": 27, "severity": "mild", "region": "mão"}
+      ]
+    },
+    "cecilia": {
+      "character_id": "cecilia",
+      "name": "Cecília",
+      "file": "CeciliaSprites.jfif",
+      "layout": "horizontal_strips",
+      "cuts": [0, 256, 416, 630, 817, 1024],
+      "expressions": ["neutral", "happy", "strict", "chatty", "extra"],
+      "collisions": [
+        {"cut_index": 1, "x": 256, "overlap_pixels": 10, "severity": "minimal", "region": "prancheta/dedos"},
+        {"cut_index": 2, "x": 416, "overlap_pixels": 0, "severity": "none", "region": "livre"},
+        {"cut_index": 3, "x": 630, "overlap_pixels": 0, "severity": "none", "region": "livre"},
+        {"cut_index": 4, "x": 817, "overlap_pixels": 0, "severity": "none", "region": "livre"}
+      ]
+    },
+    "joao": {
+      "character_id": "joao",
+      "name": "João",
+      "file": "JoaoSprites.jfif",
+      "layout": "horizontal_strips",
+      "cuts": [0, 269, 523, 747, 1024],
+      "expressions": ["neutral", "happy", "focused", "tired"],
+      "collisions": [
+        {"cut_index": 1, "x": 269, "overlap_pixels": 0, "severity": "none", "region": "livre"},
+        {"cut_index": 2, "x": 523, "overlap_pixels": 0, "severity": "none", "region": "livre"},
+        {"cut_index": 3, "x": 747, "overlap_pixels": 75, "severity": "medium", "region": "braço e lateral do tronco"}
+      ]
+    },
+    "rhayssa": {
+      "character_id": "rhayssa",
+      "name": "Rhayssa",
+      "file": "RhayssaSprites.jfif",
+      "layout": "horizontal_strips",
+      "cuts": [0, 302, 513, 746, 1024],
+      "expressions": ["neutral", "in_love", "stressed", "curious"],
+      "collisions": [
+        {"cut_index": 1, "x": 302, "overlap_pixels": 159, "severity": "heavy", "region": "cintura e saia"},
+        {"cut_index": 2, "x": 513, "overlap_pixels": 120, "severity": "heavy", "region": "cintura e saia"},
+        {"cut_index": 3, "x": 746, "overlap_pixels": 162, "severity": "heavy", "region": "cintura e saia"}
+      ]
+    },
+    "ben": {
+      "character_id": "ben",
+      "parent_group": "ben_luis",
+      "name": "Ben",
+      "file": "BenSprites.jfif",
+      "layout": "horizontal_strips",
+      "cuts": [0, 336, 709, 1024],
+      "expressions": ["neutral", "goofing_around", "panicked_newbies"],
+      "collisions": [
+        {"cut_index": 1, "x": 336, "overlap_pixels": 19, "severity": "minimal", "region": "braço"},
+        {"cut_index": 2, "x": 709, "overlap_pixels": 0, "severity": "none", "region": "livre"}
+      ]
+    },
+    "luis": {
+      "character_id": "luis",
+      "parent_group": "ben_luis",
+      "name": "Luís",
+      "file": "LuisSprites.jfif",
+      "layout": "grid_2x2",
+      "grid_splits": {"col_split": 282, "row_split": 510},
+      "expressions": ["neutral", "goofing_around", "panicked_newbies", "proud_fail"],
+      "collisions": []
+    }
+  }
+}

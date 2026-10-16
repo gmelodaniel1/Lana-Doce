@@ -1,0 +1,165 @@
+{
+  "episode": 2,
+  "title": "O Mistério da Alta Impedância",
+  "startingNodeId": "ep2_01",
+  "nodes": {
+    "ep2_01": {
+      "id": "ep2_01",
+      "speaker": "Narrador",
+      "characterId": null,
+      "expression": null,
+      "background": "central_room",
+      "text": "Segundo dia no LANA. No Salão Central, Álex está com o fone de ouvido pendurado no pescoço sobre uma camiseta de banda de rock por baixo do jaleco, separando cabos vermelhos e pretos de tDCS.",
+      "next": "ep2_02"
+    },
+    "ep2_02": {
+      "id": "ep2_02",
+      "speaker": "Rhayssa",
+      "characterId": "rhayssa",
+      "expression": "in_love",
+      "background": "central_room",
+      "text": "Álex, amor, passei só pra te deixar essa caneta marcadora antes de eu ir revisar minha dissertação. O Daniel já chegou com as fichas da coleta de hoje?",
+      "next": "ep2_03"
+    },
+    "ep2_03": {
+      "id": "ep2_03",
+      "speaker": "Álex",
+      "characterId": "alex",
+      "expression": "happy",
+      "background": "central_room",
+      "text": "Valeu, Rhay! O Daniel já tá vindo aí a mil por hora. Ô, você que começou ontem, chega mais! Vai acompanhar nossa coleta de tDCS hoje?",
+      "choices": [
+        {
+          "text": "Com certeza! Quero ver na prática a medição do sistema 10-20. Aliás, bela camiseta de banda, Álex!",
+          "lomChange": { "alex": 5, "rhayssa": 5 },
+          "next": "ep2_alex_a"
+        },
+        {
+          "text": "Vou sim. O Gabs mandou eu supervisionar se vocês não vão atrasar a maca.",
+          "lomChange": { "alex": -5, "rhayssa": -5 },
+          "next": "ep2_alex_b"
+        },
+        {
+          "text": "Claro! Precisam de ajuda para separar as faixas elásticas e a solução salina?",
+          "lomChange": { "alex": 5, "rhayssa": 5 },
+          "next": "ep2_alex_c"
+        }
+      ]
+    },
+    "ep2_alex_a": {
+      "id": "ep2_alex_a",
+      "speaker": "Álex",
+      "characterId": "alex",
+      "expression": "happy",
+      "background": "central_room",
+      "text": "Opa, finalmente mais alguém com bom gosto musical por aqui! Bora preparar a bancada então.",
+      "next": "ep2_ben_luis_01"
+    },
+    "ep2_alex_b": {
+      "id": "ep2_alex_b",
+      "speaker": "Rhayssa",
+      "characterId": "rhayssa",
+      "expression": "stressed",
+      "background": "central_room",
+      "text": "Ih, não precisa vir no modo fiscal do Gabs não, o Álex deixa tudo pronto no horário...",
+      "next": "ep2_ben_luis_01"
+    },
+    "ep2_alex_c": {
+      "id": "ep2_alex_c",
+      "speaker": "Rhayssa",
+      "characterId": "rhayssa",
+      "expression": "neutral",
+      "background": "central_room",
+      "text": "Que ótimo ter alguém prestativo ajudando! Assim o Álex termina a tempo de almoçar comigo.",
+      "next": "ep2_ben_luis_01"
+    },
+    "ep2_ben_luis_01": {
+      "id": "ep2_ben_luis_01",
+      "speaker": "Ben & Luís",
+      "characterId": "ben_luis",
+      "expression": "proud_fail",
+      "background": "central_room",
+      "text": "Galera, a gente já adiantou o lado de vocês! Medimos o crânio do manequim de treino, colocamos as esponjas e ligamos o aparelho! Só tem um detalhe...",
+      "next": "ep2_ben_luis_02"
+    },
+    "ep2_ben_luis_02": {
+      "id": "ep2_ben_luis_02",
+      "speaker": "Ben & Luís",
+      "characterId": "ben_luis",
+      "expression": "panicked_newbies",
+      "background": "central_room",
+      "text": "O tDCS não para de apitar 'HIGH IMPEDANCE' e a corrente não sobe nem pra 0.5 mA! A gente quebrou o cérebro do manequim?!",
+      "next": "ep2_daniel_01"
+    },
+    "ep2_daniel_01": {
+      "id": "ep2_daniel_01",
+      "speaker": "Daniel",
+      "characterId": "daniel",
+      "expression": "chaotic_excited",
+      "background": "central_room",
+      "text": "(Chegando com três artigos debaixo do braço e um copo de café): Que apito é esse?! Ben, Luís, vocês colocaram as esponjas secas de novo ou inverteram o ânodo com o cátodo?!",
+      "next": "ep2_daniel_02"
+    },
+    "ep2_daniel_02": {
+      "id": "ep2_daniel_02",
+      "speaker": "Fernanda",
+      "characterId": "fernanda",
+      "expression": "eye_roll",
+      "background": "central_room",
+      "text": "(Passando pelo salão com um sorriso irônico): Cinco minutos que o Daniel entra na sala e já tem alarme soando. Querem que eu chame um bombeiro ou vocês dão conta?",
+      "choices": [
+        {
+          "text": "Deixa comigo! As esponjas estão secas — vou umedecer com salina na medida certa pra baixar a impedância sem escorrer.",
+          "lomChange": { "daniel": 5, "alex": 5, "fernanda": 5, "ben_luis": 5 },
+          "next": "ep2_fix_a"
+        },
+        {
+          "text": "Relaxa, Fernanda, está tudo sob controle! E Daniel, já conferi que o cabo vermelho (ânodo) está certinho no C3.",
+          "lomChange": { "daniel": 5, "fernanda": 5, "alex": 0 },
+          "next": "ep2_fix_b"
+        },
+        {
+          "text": "Ben e Luís fizeram tudo errado de novo! Vou chamar o Gabs pra ver isso.",
+          "lomChange": { "ben_luis": -10, "daniel": -5, "alex": -5 },
+          "next": "ep2_fix_c"
+        }
+      ]
+    },
+    "ep2_fix_a": {
+      "id": "ep2_fix_a",
+      "speaker": "Daniel",
+      "characterId": "daniel",
+      "expression": "laughing",
+      "background": "central_room",
+      "text": "BINGO! Olha aí a impedância caindo na hora! Viu só, Fernanda? Minha equipe trabalha em perfeita harmonia caótica!",
+      "next": "ep2_end"
+    },
+    "ep2_fix_b": {
+      "id": "ep2_fix_b",
+      "speaker": "Fernanda",
+      "characterId": "fernanda",
+      "expression": "teasing",
+      "background": "central_room",
+      "text": "Sorte a sua que a pessoa nova sabe diferenciar o C3 do Cz, viu Daniel? Senão seu projeto ia estimular a orelha do paciente.",
+      "next": "ep2_end"
+    },
+    "ep2_fix_c": {
+      "id": "ep2_fix_c",
+      "speaker": "Álex",
+      "characterId": "alex",
+      "expression": "overwhelmed",
+      "background": "central_room",
+      "text": "Pô, não precisava dedurar os meninos pro Gabs... Era só pingar um pouco de solução salina na esponja.",
+      "next": "ep2_end"
+    },
+    "ep2_end": {
+      "id": "ep2_end",
+      "speaker": "Ben & Luís",
+      "characterId": "ben_luis",
+      "expression": "goofing_around",
+      "background": "central_room",
+      "text": "Ufa! Valeu por salvar nossa pele! Na próxima a gente promete não esquecer o soro fisiológico... hehehe!",
+      "next": null
+    }
+  }
+}
