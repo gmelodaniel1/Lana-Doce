@@ -4,7 +4,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   katia: {
     id: 'katia',
     name: 'Profa. Kátia',
-    nickname: 'Kátia',
     title: 'Coordenadora Suprema do LANA',
     hasRomanceRoute: false, // Casada - Mentoria / Respeito
     themeColor: '#0284c7', // Sky Blue institucional
@@ -15,7 +14,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   gabs: {
     id: 'gabs',
     name: 'Gabriel',
-    nickname: 'Gabs',
     title: 'Pós-Doutorando Sisudo',
     hasRomanceRoute: true,
     themeColor: '#475569', // Slate sóbrio
@@ -26,7 +24,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   daniel: {
     id: 'daniel',
     name: 'Daniel',
-    nickname: 'Dani',
     title: 'Doutorando Caótico & Carismático',
     hasRomanceRoute: true,
     themeColor: '#ea580c', // Laranja vibrante/caótico
@@ -37,7 +34,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   joao: {
     id: 'joao',
     name: 'João',
-    nickname: 'João',
     title: 'Doutorando de Parkinson',
     hasRomanceRoute: false, // Comprometido com Cecília
     themeColor: '#16a34a', // Verde foco
@@ -48,7 +44,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   beca: {
     id: 'beca',
     name: 'Rebeca',
-    nickname: 'Beca',
     title: 'Doutoranda Crente',
     hasRomanceRoute: false, // Casada
     themeColor: '#8b5cf6', // Roxo discreto
@@ -59,8 +54,7 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   sergio: {
     id: 'sergio',
     name: 'Sérgio',
-    nickname: 'Robozão',
-    title: 'Mestrando Desleixado e Bonachão',
+    title: 'Mestrando Calmo e Generoso',
     hasRomanceRoute: true,
     themeColor: '#0d9488', // Teal relaxado
     badgeColor: '#0f766e',
@@ -70,7 +64,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   fernanda: {
     id: 'fernanda',
     name: 'Fernanda',
-    nickname: 'Fer',
     title: 'Mestranda Levemente Implicante',
     hasRomanceRoute: true,
     themeColor: '#db2777', // Magenta irônico
@@ -81,7 +74,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   cecilia: {
     id: 'cecilia',
     name: 'Cecília',
-    nickname: 'Ceci',
     title: 'Mestranda de Parkinson',
     hasRomanceRoute: false, // Namorada do João
     themeColor: '#059669', // Esmeralda
@@ -92,7 +84,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   rhayssa: {
     id: 'rhayssa',
     name: 'Rhayssa',
-    nickname: 'Rhay',
     title: 'Mestranda Focada e Apaixonada',
     hasRomanceRoute: false, // Namorada do Álex
     themeColor: '#e11d48', // Rose romance
@@ -103,7 +94,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   leticia: {
     id: 'leticia',
     name: 'Letícia',
-    nickname: 'Lê',
     title: 'IC Bem-Humorada da Copa',
     hasRomanceRoute: true,
     themeColor: '#f59e0b', // Âmbar café/lanche
@@ -114,7 +104,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   alex: {
     id: 'alex',
     name: 'Álex',
-    nickname: 'Álex Rock',
     title: 'IC Rockeiro do Projeto do Daniel',
     hasRomanceRoute: false, // Namorado de Rhayssa
     themeColor: '#6366f1', // Indigo rocker
@@ -125,7 +114,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   olga: {
     id: 'olga',
     name: 'Olga',
-    nickname: 'Olga',
     title: 'IC Dedicada do Parkinson',
     hasRomanceRoute: false, // Namorada da Alana
     themeColor: '#14b8a6', // Ciano suave
@@ -136,7 +124,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   alana: {
     id: 'alana',
     name: 'Alana',
-    nickname: 'Alana',
     title: 'IC Parceira do Parkinson',
     hasRomanceRoute: false, // Namorada da Olga
     themeColor: '#10b981', // Verde mente
@@ -147,7 +134,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   will: {
     id: 'will',
     name: 'Willyberg',
-    nickname: 'Will',
     title: 'IC Tagarela com Poker-Face',
     hasRomanceRoute: true,
     themeColor: '#a855f7', // Púrpura fofoca
@@ -158,7 +144,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   samara: {
     id: 'samara',
     name: 'Samara',
-    nickname: 'Sam',
     title: 'IC Silenciosa e Observadora',
     hasRomanceRoute: true,
     themeColor: '#64748b', // Cinza tímido
@@ -169,7 +154,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   ben_luis: {
     id: 'ben_luis',
     name: 'Ben & Luís',
-    nickname: 'A Dupla de Bobões',
     title: 'ICs Novatos Cômicos',
     hasRomanceRoute: false,
     themeColor: '#eab308', // Amarelo comédia
@@ -180,7 +164,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   ben: {
     id: 'ben',
     name: 'Ben',
-    nickname: 'Ben',
     title: 'IC Novato Cômico',
     hasRomanceRoute: false,
     themeColor: '#eab308',
@@ -191,7 +174,6 @@ export const CHARACTERS_METADATA: Record<CharacterId, CharacterMeta> = {
   luis: {
     id: 'luis',
     name: 'Luís',
-    nickname: 'Luís',
     title: 'IC Novato Cômico',
     hasRomanceRoute: false,
     themeColor: '#eab308',

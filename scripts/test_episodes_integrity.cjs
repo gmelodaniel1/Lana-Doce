@@ -51,19 +51,16 @@ for (const epNum of EPISODE_NUMBERS) {
       totalErrors++;
     }
 
-    // 3. Verificar sprites de todos os personagens em cena
-    if (node.sprites) {
-      for (const sp of node.sprites) {
-        if (!CHARACTERS_METADATA[sp.characterId]) {
-          console.error(`[ERRO DE PERSONAGEM] Personagem "${sp.characterId}" no nó "${nodeId}" não existe em CHARACTERS_METADATA`);
-          totalErrors++;
-        }
-        const exprFile = path.join(SPRITES_DIR, sp.characterId, `${sp.expression}.png`);
-        const neutralFile = path.join(SPRITES_DIR, sp.characterId, 'neutral.png');
-        if (!fs.existsSync(exprFile) && !fs.existsSync(neutralFile)) {
-          console.error(`[ERRO DE SPRITE] Sprite ausente para "${sp.characterId}" (${sp.expression}) no nó "${nodeId}"`);
-          totalErrors++;
-        }
+    // 3. Verificar sprites de todos os personagens em cena (expressão exata precisa existir)
+    for (const sp of [node.sprite, node.secondarySprite].filter(Boolean)) {
+      if (!CHARACTERS_METADATA[sp.characterId]) {
+        console.error(`[ERRO DE PERSONAGEM] Personagem "${sp.characterId}" no nó "${nodeId}" não existe em CHARACTERS_METADATA`);
+        totalErrors++;
+      }
+      const exprFile = path.join(SPRITES_DIR, sp.characterId, `${sp.expression}.png`);
+      if (!fs.existsSync(exprFile)) {
+        console.error(`[ERRO DE SPRITE] Sprite ausente para "${sp.characterId}" (${sp.expression}) no nó "${nodeId}"`);
+        totalErrors++;
       }
     }
 
@@ -90,6 +87,24 @@ for (const epNum of EPISODE_NUMBERS) {
     if (node.isEnding) {
       endingCount++;
       console.log(`  -> Nó de desfecho identificado: "${nodeId}" ("${node.text.substring(0, 45)}...")`);
+    }
+  }
+
+  // 6. Detectar nós órfãos (inalcançáveis a partir do nó inicial)
+  const reachable = new Set();
+  const queue = [script.initialNodeId];
+  while (queue.length > 0) {
+    const id = queue.shift();
+    if (!id || reachable.has(id) || !script.nodes[id]) continue;
+    reachable.add(id);
+    const n = script.nodes[id];
+    if (n.nextNodeId) queue.push(n.nextNodeId);
+    for (const c of n.choices || []) queue.push(c.nextNodeId);
+  }
+  for (const nodeId of Object.keys(script.nodes)) {
+    if (!reachable.has(nodeId)) {
+      console.error(`[ERRO DE GRAFO] Nó "${nodeId}" é inalcançável a partir de "${script.initialNodeId}"`);
+      totalErrors++;
     }
   }
 

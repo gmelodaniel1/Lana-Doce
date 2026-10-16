@@ -8,7 +8,7 @@ export type CharacterId =
   | 'daniel'     // Daniel (Doutorando Caótico & Carismático)
   | 'joao'       // João (Doutorando de Parkinson - Comprometido com Cecília)
   | 'beca'       // Rebeca / Beca (Doutoranda Crente - Casada)
-  | 'sergio'     // Sérgio (Mestrando Robozão Desleixado)
+  | 'sergio'     // Sérgio (Mestrando Calmo e Generoso)
   | 'fernanda'   // Fernanda (Mestranda Levemente Implicante)
   | 'cecilia'    // Cecília (Mestranda de Parkinson - Namorada do João)
   | 'rhayssa'    // Rhayssa (Mestranda Focada - Namorada do Álex)

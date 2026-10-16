@@ -21,6 +21,10 @@ export interface RawEpisodeNode {
   text: string;
   next?: string | null;
   choices?: RawEpisodeChoice[];
+  /** Trilha fixa para a cena (sobrepõe a detecção automática). */
+  bgm?: BgmTrack;
+  /** Efeito sonoro fixo; "none" silencia a detecção automática. */
+  sfx?: SfxType | 'none';
 }
 
 export interface RawEpisode {
@@ -160,6 +164,9 @@ export function parseRawEpisode(raw: RawEpisode): DialogueScript {
     } else {
       bgm = 'casual';
     }
+
+    if (rawNode.bgm) bgm = rawNode.bgm;
+    if (rawNode.sfx) sfx = rawNode.sfx === 'none' ? undefined : rawNode.sfx;
 
     const isEnding = !rawNode.next && (!choices || choices.length === 0);
 

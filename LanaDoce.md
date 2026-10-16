@@ -101,19 +101,20 @@
 
 ## 4. Mestrandos
 
-### 6. Sérgio (O "Robozão" Desleixado e Bonachão)
+### 6. Sérgio (O Mestrando Calmo e Generoso)
 - **Papel:** Mestrando (Membro do "Grupo Antigo" / Melhor amigo de Daniel)[cite: 8].
-- **Aparência Física:** Alto, bonito[cite: 8], porte físico grande ("robozão"), mas com visual totalmente desleixado — jaleco amassado ou esquecido em algum canto, postura meio travada nos movimentos mas relaxada no espírito.
-- **Personalidade:** Tem um jeito mecânico e meio "robozão" de se mexer ou reagir, mas é extremamente bonachão, engraçado[cite: 8] e zero estressado. Forma uma dupla cômica e inseparável com a energia caótica do Daniel[cite: 8].
+- **Aparência Física:** Alto, bonito[cite: 8], porte físico grande, visual desleixado — jaleco amassado ou esquecido em algum canto, sorriso tranquilo.
+- **Personalidade:** Extremamente bonachão, engraçado[cite: 8] e generoso — é quem resolve as coisas pelos outros sem pedir crédito. Forma uma dupla inseparável com a energia caótica do Daniel[cite: 8]. Por trás da calma, carrega uma pressão que não mostra a ninguém: o prazo da qualificação se aproxima, recebeu uma proposta de uma clínica e não sabe se a pesquisa ainda é o lugar dele.
+- **Arco Dramático (Ep. 1–3):** Esconde o e-mail da qualificação (Ep. 1) → confessa a proposta da clínica e pede segredo (Ep. 2) → Daniel descobre, os dois brigam e se reconciliam; Gabriel se desculpa e oferece ajuda (Ep. 3).
 - **Expressões Chave (Sprites):**
-  - `neutral`: Postura reta de "robozão", rosto calmo com o jaleco todo torto.
+  - `neutral`: Rosto calmo, jaleco todo torto.
   - `laughing`: Risada contagiante e descontraída (geralmente em dupla com o Daniel).
-  - `robotic_blank`: Olhar de "processando dados..." quando alguém pede algo muito burocrático logo cedo.
+  - `robotic_blank`: Olhar distante e pensativo, perdido nas próprias preocupações. *(Nome técnico do arquivo; nunca descrever como "robótico" no texto.)*
   - `chill`: Dando de ombros com um meio sorriso de quem não se abala com nada.
 - **Gatilhos de Afinidade (LOM):**
-  - *Sobe (+):* Levar a rotina do mestrado com leveza, rir das resenhas dele com o Daniel, não implicar com o jeito desleixado dele.
-  - *Desce (-):* Cobrar perfeccionismo estético, dar sermão sobre organização, criar intriga no Grupo Antigo.
-- **Bordão / Maneirismo:** Vira o tronco inteiro de uma vez só como um robô quando é chamado e solta uma tirada engraçada com a cara mais tranquila do mundo.
+  - *Sobe (+):* Perceber quando ele não está bem, oferecer apoio sem pressionar, respeitar o tempo dele, rir das resenhas com o Daniel.
+  - *Desce (-):* Cobrar perfeccionismo, expô-lo para o Gabriel, quebrar a confiança dele.
+- **Bordão / Maneirismo:** Resolve o problema de alguém antes que a pessoa perceba que ele existia — e esquece de avisar.
 
 ---
 
@@ -281,7 +282,7 @@
 ---
 
 ## 6. Dinâmicas e Facções Sociais (Guia para Roteiro)
-1. **O Grupo Antigo (`Daniel`, `Sérgio`, `João`, `Cecília`, `Fernanda`)[cite: 8]:** Têm muita história juntos[cite: 8]. Daniel (caótico) e Sérgio (robozão desleixado) formam a dupla da resenha[cite: 8]; João e Cecília são o casal estruturado[cite: 8]; Fernanda é a amiga levemente implicante que adora dar umas alfinetadas (especialmente no Daniel, com quem já ficou)[cite: 8].
+1. **O Grupo Antigo (`Daniel`, `Sérgio`, `João`, `Cecília`, `Fernanda`)[cite: 8]:** Têm muita história juntos[cite: 8]. Daniel (caótico) e Sérgio (calmo e generoso) formam a dupla da resenha[cite: 8]; João e Cecília são o casal estruturado[cite: 8]; Fernanda é a amiga levemente implicante que adora dar umas alfinetadas (especialmente no Daniel, com quem já ficou)[cite: 8].
 2. **Esquadrão Parkinson (`João`, `Cecília`, `Olga`, `Alana`):** Dois casais que trabalham juntos com pacientes de Doença de Parkinson[cite: 8]. Operam em total sintonia nas macas e salas de estimulação.
 3. **Parceria de Projeto (`Daniel` e `Álex`):** Doutorando e seu aluno de IC. Daniel entra com a enxurrada de ideias e protocolos, enquanto Álex segura as pontas na bancada (ao som de rock no fone de ouvido e sob os olhares apaixonados da `Rhayssa`).
 4. **Rádio Corredor & Copa (`Letícia` e `Will`):** A combinação perfeita nos intervalos — enquanto Letícia garante o estoque de lanches na copa, Will comenta tudo o que acontece no laboratório com seu olhar pleno e inabalável.

@@ -17,20 +17,83 @@
       "speaker": "Narrador",
       "characterId": null,
       "expression": null,
-      "background": "central_room",
-      "text": "No Salão Central, entre macas, barras paralelas e tablados de fisioterapia, um homem careca de postura rígida analisa uma prancheta com a testa franzida. É o Pós-Doc Gabriel, o 'Gabs'.",
+      "background": "hallway_lana",
+      "text": "No banco do corredor, uma garota de fones de ouvido lê um artigo cheio de marcações coloridas. Ela levanta os olhos por um segundo quando você se aproxima — e volta a ler.",
+      "sfx": "none",
       "next": "ep1_03"
     },
     "ep1_03": {
       "id": "ep1_03",
-      "speaker": "Gabriel (Gabs)",
+      "speaker": "Você",
+      "characterId": "protagonist",
+      "expression": null,
+      "background": "hallway_lana",
+      "text": "(Será que ela é do LANA? Ninguém me disse nem onde eu deveria me apresentar...)",
+      "choices": [
+        {
+          "text": "(Sentar na outra ponta do banco e esperar em silêncio até ela terminar o parágrafo.)",
+          "lomChange": { "samara": 10 },
+          "next": "ep1_sam_a"
+        },
+        {
+          "text": "(Em tom baixo) Oi, desculpa atrapalhar... você sabe onde eu me apresento no LANA?",
+          "lomChange": { "samara": 5 },
+          "next": "ep1_sam_b"
+        },
+        {
+          "text": "OI! TUDO BEM? É MEU PRIMEIRO DIA AQUI!",
+          "lomChange": { "samara": -5 },
+          "next": "ep1_sam_c"
+        }
+      ]
+    },
+    "ep1_sam_a": {
+      "id": "ep1_sam_a",
+      "speaker": "Samara",
+      "characterId": "samara",
+      "expression": "shy_smile",
+      "background": "hallway_lana",
+      "text": "(Depois de um minuto, ela tira um lado do fone.) ...Obrigada por esperar. É essa porta aí. O Gabriel já está lá dentro.",
+      "next": "ep1_salao_intro"
+    },
+    "ep1_sam_b": {
+      "id": "ep1_sam_b",
+      "speaker": "Samara",
+      "characterId": "samara",
+      "expression": "neutral",
+      "background": "hallway_lana",
+      "text": "...É aqui. (Ela aponta a porta com a caneta.) Procura o Gabriel. Ele não morde. ...Muito.",
+      "next": "ep1_salao_intro"
+    },
+    "ep1_sam_c": {
+      "id": "ep1_sam_c",
+      "speaker": "Samara",
+      "characterId": "samara",
+      "expression": "startled",
+      "background": "hallway_lana",
+      "text": "(Ela dá um pulo e o artigo escorrega do colo.) ...A porta. Ali.",
+      "next": "ep1_salao_intro"
+    },
+    "ep1_salao_intro": {
+      "id": "ep1_salao_intro",
+      "speaker": "Narrador",
+      "characterId": null,
+      "expression": null,
+      "background": "central_room",
+      "text": "No Salão Central, entre macas, barras paralelas e tablados de fisioterapia, um homem careca de postura rígida analisa uma prancheta com a testa franzida. É o pós-doutorando Gabriel.",
+      "sfx": "none",
+      "next": "ep1_gabs_01"
+    },
+    "ep1_gabs_01": {
+      "id": "ep1_gabs_01",
+      "speaker": "Gabriel",
       "characterId": "gabs",
       "expression": "neutral",
       "background": "central_room",
       "text": "Você deve ser a pessoa nova que a Profa. Kátia alocou para este semestre. Pontualidade é o mínimo, mas o que me interessa aqui é rigor metodológico. Já leu o manual de segurança das salas de estimulação?",
       "choices": [
         {
-          "text": "Li sim, Gabs. Já revisei inclusive os critérios de triagem para rTMS e tDCS.",
+          "text": "Li sim, Gabriel. Já revisei inclusive os critérios de triagem para rTMS e tDCS.",
           "lomChange": { "gabs": 5 },
           "next": "ep1_gabs_a"
         },
@@ -48,34 +111,95 @@
     },
     "ep1_gabs_a": {
       "id": "ep1_gabs_a",
-      "speaker": "Gabriel (Gabs)",
+      "speaker": "Gabriel",
       "characterId": "gabs",
       "expression": "approving",
       "background": "central_room",
       "text": "Menos mal. Alguém que lê a documentação antes de ligar os cabos já poupa metade do meu trabalho.",
-      "next": "ep1_04"
+      "next": "ep1_gabs_02"
     },
     "ep1_gabs_b": {
       "id": "ep1_gabs_b",
-      "speaker": "Gabriel (Gabs)",
+      "speaker": "Gabriel",
       "characterId": "gabs",
       "expression": "stern",
       "background": "central_room",
       "text": "Prática sem embasamento técnico gera artefato no dado. Revise o protocolo antes de encostar em qualquer aparelho.",
-      "next": "ep1_04"
+      "next": "ep1_gabs_02"
     },
     "ep1_gabs_c": {
       "id": "ep1_gabs_c",
-      "speaker": "Gabriel (Gabs)",
+      "speaker": "Gabriel",
       "characterId": "gabs",
       "expression": "stern",
       "background": "central_room",
       "text": "O paciente agendado para as 9h não quer saber se você acabou de chegar. Mantenha a postura.",
-      "next": "ep1_04"
+      "next": "ep1_gabs_02"
     },
-    "ep1_04": {
-      "id": "ep1_04",
-      "speaker": "Gabriel (Gabs)",
+    "ep1_gabs_02": {
+      "id": "ep1_gabs_02",
+      "speaker": "Narrador",
+      "characterId": null,
+      "expression": null,
+      "background": "central_room",
+      "text": "O celular de Gabriel vibra sobre a prancheta. Ele lê a notificação, fecha os olhos e aperta a ponte do nariz por alguns segundos, como se estivesse contando até dez.",
+      "next": "ep1_gabs_03"
+    },
+    "ep1_gabs_03": {
+      "id": "ep1_gabs_03",
+      "speaker": "Gabriel",
+      "characterId": "gabs",
+      "expression": "tired",
+      "background": "central_room",
+      "text": "...Desculpe. E-mail da coordenação. Relatório da bolsa, prazo, o de sempre.",
+      "choices": [
+        {
+          "text": "Se precisar de ajuda com alguma planilha, eu me viro bem com organização de dados.",
+          "lomChange": { "gabs": 5 },
+          "next": "ep1_gabs_d"
+        },
+        {
+          "text": "Parece que o dia já começou pesado pra você. Tudo bem?",
+          "lomChange": { "gabs": 5 },
+          "next": "ep1_gabs_e"
+        },
+        {
+          "text": "(Não comentar nada e esperar as instruções.)",
+          "lomChange": { "gabs": 0 },
+          "next": "ep1_gabs_f"
+        }
+      ]
+    },
+    "ep1_gabs_d": {
+      "id": "ep1_gabs_d",
+      "speaker": "Gabriel",
+      "characterId": "gabs",
+      "expression": "approving",
+      "background": "central_room",
+      "text": "Hm. Vou lembrar disso. Mas antes, prove que sabe resolver um problema mais simples.",
+      "next": "ep1_mission"
+    },
+    "ep1_gabs_e": {
+      "id": "ep1_gabs_e",
+      "speaker": "Gabriel",
+      "characterId": "gabs",
+      "expression": "neutral",
+      "background": "central_room",
+      "text": "(Ele te encara por um instante, surpreso com a pergunta.) Está tudo sob controle. ...Mas obrigado por perguntar. Pouca gente pergunta.",
+      "next": "ep1_mission"
+    },
+    "ep1_gabs_f": {
+      "id": "ep1_gabs_f",
+      "speaker": "Gabriel",
+      "characterId": "gabs",
+      "expression": "neutral",
+      "background": "central_room",
+      "text": "Ótimo. Gosto de quem não perde tempo.",
+      "next": "ep1_mission"
+    },
+    "ep1_mission": {
+      "id": "ep1_mission",
+      "speaker": "Gabriel",
       "characterId": "gabs",
       "expression": "stern",
       "background": "central_room",
@@ -86,56 +210,79 @@
           "next": "ep1_copa_01"
         },
         {
-          "text": "Perguntar perto dos armários onde Rebeca e Samara estão organizando pastas.",
+          "text": "Perguntar perto dos armários, onde Rebeca e Samara estão organizando pastas.",
           "next": "ep1_armarios_01"
         }
       ]
     },
     "ep1_armarios_01": {
       "id": "ep1_armarios_01",
-      "speaker": "Rebeca (Beca)",
-      "characterId": "rebeca",
+      "speaker": "Rebeca",
+      "characterId": "beca",
       "expression": "neutral",
       "background": "central_room",
-      "text": "Oi! Seja muito bem-vindo(a) ao LANA! Eu sou a Rebeca, doutoranda aqui do lab. E essa aqui no cantinho organizando as fichas é a Samara, da IC.",
+      "text": "Oi! Seja muito bem-vindo(a) ao LANA! Eu sou a Rebeca, doutoranda aqui do lab. E essa aqui organizando as fichas você já deve ter visto no corredor: é a Samara, da IC.",
       "next": "ep1_armarios_02"
     },
     "ep1_armarios_02": {
       "id": "ep1_armarios_02",
       "speaker": "Samara",
       "characterId": "samara",
-      "expression": "shy_smile",
+      "expression": "observant",
       "background": "central_room",
-      "text": "...Oi. (Samara cumprimenta com um aceno discreto de cabeça sem tirar o dedo da página do artigo).",
+      "text": "...(Ela te reconhece e faz um aceno discreto de cabeça, sem tirar o dedo da página.)",
       "choices": [
         {
-          "text": "Prazer, meninas! Vocês viram quem pegou a chave da Sala 1 de TMS?",
-          "lomChange": { "rebeca": 5, "samara": 5 },
+          "text": "Prazer, Rebeca! Oi de novo, Samara. Vocês viram quem pegou a chave da Sala 1 de TMS?",
+          "lomChange": { "beca": 5, "samara": 5 },
           "next": "ep1_armarios_a"
         },
         {
           "text": "Samara, você fala pouco assim mesmo ou é só timidez de início?",
-          "lomChange": { "samara": -5, "rebeca": 0 },
+          "lomChange": { "samara": -5, "beca": -5 },
           "next": "ep1_armarios_b"
+        },
+        {
+          "text": "Rebeca, que organização impecável! Parece uma biblioteca.",
+          "lomChange": { "beca": 10 },
+          "next": "ep1_armarios_c"
         }
       ]
     },
     "ep1_armarios_a": {
       "id": "ep1_armarios_a",
-      "speaker": "Rebeca (Beca)",
-      "characterId": "rebeca",
+      "speaker": "Rebeca",
+      "characterId": "beca",
       "expression": "shocked_polite",
       "background": "central_room",
-      "text": "Misericórdia, o Gabs já te colocou nessa missão? A Samara viu a Letícia indo pra Copa agora há pouco, pergunta lá!",
+      "text": "Misericórdia, o Gabriel já te colocou nessa missão? A Samara viu a Letícia indo pra Copa agora há pouco, pergunta lá!",
       "next": "ep1_copa_01"
     },
     "ep1_armarios_b": {
       "id": "ep1_armarios_b",
+      "speaker": "Rebeca",
+      "characterId": "beca",
+      "expression": "worried",
+      "background": "central_room",
+      "text": "Ai, gente... (Rebeca coloca a mão no braço da Samara.) Cada um tem seu tempo, viu? Ela fala quando tem algo importante pra dizer.",
+      "next": "ep1_armarios_b2"
+    },
+    "ep1_armarios_b2": {
+      "id": "ep1_armarios_b2",
       "speaker": "Samara",
       "characterId": "samara",
       "expression": "observant",
       "background": "central_room",
-      "text": "...Eu só prefiro observar. A chave passou pela Copa há cinco minutos.",
+      "text": "...A chave passou pela Copa há cinco minutos.",
+      "next": "ep1_copa_01"
+    },
+    "ep1_armarios_c": {
+      "id": "ep1_armarios_c",
+      "speaker": "Rebeca",
+      "characterId": "beca",
+      "expression": "blessed",
+      "background": "central_room",
+      "text": "Ai, obrigada! Aqui, se a gente não organiza, o Daniel transforma tudo em caos em meia hora. Ah, e a Samara viu a Letícia levando alguma coisa pra Copa. Tenta lá!",
       "next": "ep1_copa_01"
     },
     "ep1_copa_01": {
@@ -149,24 +296,24 @@
     },
     "ep1_copa_02": {
       "id": "ep1_copa_02",
-      "speaker": "Willyberg (Will)",
+      "speaker": "Willyberg",
       "characterId": "will",
       "expression": "chatty_excited",
       "background": "copa",
-      "text": "(Com os olhos completamente neutros e inabaláveis, mas gesticulando sem parar): Mentira dela, é a terceira vez que ela abre essa tupperware desde as oito da manhã. Mas conta tudo: você é a pessoa nova que veio sobreviver ao mau humor do Gabs?",
+      "text": "(Com os olhos completamente serenos, mas gesticulando sem parar): Mentira dela, é a terceira vez que ela abre essa tupperware desde as oito. Mas conta tudo: você é a pessoa nova que veio sobreviver ao mau humor do Gabriel?",
       "choices": [
         {
-          "text": "Aceito o bolo, Letícia! E sim, Will, já estou caçando a chave do TMS pra ele.",
+          "text": "Aceito o bolo, Letícia! E sim, Willyberg, estou caçando a chave do TMS pra ele.",
           "lomChange": { "leticia": 5, "will": 5 },
           "next": "ep1_copa_a"
         },
         {
           "text": "Melhor eu não comer agora, preciso achar a chave da Sala 1 rápido.",
-          "lomChange": { "leticia": 0, "will": 0 },
+          "lomChange": { "leticia": -5, "will": 0 },
           "next": "ep1_copa_b"
         },
         {
-          "text": "Como você consegue falar tão rápido sem mexer um músculo da testa, Will?",
+          "text": "Como você consegue falar tão animado sem mexer um músculo da testa, Willyberg?",
           "lomChange": { "will": 5, "leticia": 5 },
           "next": "ep1_copa_c"
         }
@@ -178,78 +325,185 @@
       "characterId": "leticia",
       "expression": "joyful",
       "background": "copa",
-      "text": "Aí sim! Já ganhou meu respeito acadêmico! Olha, quem passou aqui pegando água com o chaveiro na mão foi o Sérgio, indo encontrar o Daniel lá no fundo do salão.",
-      "next": "ep1_salao_antigos_01"
+      "text": "Aí sim! Já ganhou meu respeito acadêmico! Quem passou aqui com o chaveiro na mão foi o Sérgio, indo encontrar o Daniel no fundo do salão.",
+      "sfx": "none",
+      "next": "ep1_fofoca_01"
     },
     "ep1_copa_b": {
       "id": "ep1_copa_b",
-      "speaker": "Willyberg (Will)",
+      "speaker": "Willyberg",
       "characterId": "will",
       "expression": "tea_spilling",
       "background": "copa",
-      "text": "Foco total, adorei. Mas já te adianto o boletim: a chave está com a dupla dinâmica Daniel e Sérgio lá no tablado do fundo. Boa sorte no meio daquele caos.",
-      "next": "ep1_salao_antigos_01"
+      "text": "Foco total, adorei. A chave está com o Sérgio e o Daniel lá no tablado do fundo. Mas espera, antes de você ir...",
+      "sfx": "none",
+      "next": "ep1_fofoca_01"
     },
     "ep1_copa_c": {
       "id": "ep1_copa_c",
-      "speaker": "Willyberg (Will)",
+      "speaker": "Willyberg",
       "characterId": "will",
       "expression": "unimpressed",
       "background": "copa",
-      "text": "É conservação de energia facial para não dar rugas antes da defesa do TCC, amor. Agora vai lá no fundo do salão que a chave tá com o Sérgio e o Daniel.",
-      "next": "ep1_salao_antigos_01"
+      "text": "É conservação de energia facial pra não ter rugas antes da defesa do TCC, meu bem. A chave tá com o Sérgio e o Daniel. Mas olha, antes de ir...",
+      "sfx": "none",
+      "next": "ep1_fofoca_01"
     },
-    "ep1_salao_antigos_01": {
-      "id": "ep1_salao_antigos_01",
+    "ep1_fofoca_01": {
+      "id": "ep1_fofoca_01",
+      "speaker": "Willyberg",
+      "characterId": "will",
+      "expression": "tea_spilling",
+      "background": "copa",
+      "text": "(Abaixando a voz) Aviso de utilidade pública: hoje o clima no fundo do salão tá estranho. A Fernanda chegou de cara fechada e não deu bom dia pro Daniel. E esses dois têm... história.",
+      "bgm": "tension",
+      "next": "ep1_fofoca_02"
+    },
+    "ep1_fofoca_02": {
+      "id": "ep1_fofoca_02",
+      "speaker": "Letícia",
+      "characterId": "leticia",
+      "expression": "neutral",
+      "background": "copa",
+      "text": "Willyberg! Deixa a pessoa chegar antes de entregar o boletim completo! (...Mas é verdade. Desde ontem os dois estão esquisitos.)",
+      "bgm": "tension",
+      "choices": [
+        {
+          "text": "Que tipo de história? Agora fiquei curioso(a).",
+          "lomChange": { "will": 5 },
+          "next": "ep1_fofoca_a"
+        },
+        {
+          "text": "Melhor eu não me meter. Acabei de chegar.",
+          "lomChange": { "leticia": 5, "will": -5 },
+          "next": "ep1_fofoca_b"
+        },
+        {
+          "text": "Valeu pelo aviso. Vou com cuidado então.",
+          "lomChange": { "will": 5, "leticia": 5 },
+          "next": "ep1_fofoca_c"
+        }
+      ]
+    },
+    "ep1_fofoca_a": {
+      "id": "ep1_fofoca_a",
+      "speaker": "Willyberg",
+      "characterId": "will",
+      "expression": "chatty_excited",
+      "background": "copa",
+      "text": "Não posso dar spoiler da temporada inteira. Digamos que eles já foram mais que colegas no mestrado, e quando isso acaba, sobra muita coisa não dita. Mas o babado de hoje é outro: envolve um congresso. Fica de olho!",
+      "next": "ep1_salao_01"
+    },
+    "ep1_fofoca_b": {
+      "id": "ep1_fofoca_b",
+      "speaker": "Letícia",
+      "characterId": "leticia",
+      "expression": "joyful",
+      "background": "copa",
+      "text": "Sábia decisão! Leva um pedaço de bolo pro caminho, você vai precisar de energia.",
+      "next": "ep1_salao_01"
+    },
+    "ep1_fofoca_c": {
+      "id": "ep1_fofoca_c",
+      "speaker": "Willyberg",
+      "characterId": "will",
+      "expression": "neutral",
+      "background": "copa",
+      "text": "Educação e estratégia. Você vai longe aqui, viu?",
+      "next": "ep1_salao_01"
+    },
+    "ep1_salao_01": {
+      "id": "ep1_salao_01",
       "speaker": "Daniel",
       "characterId": "daniel",
       "expression": "chaotic_excited",
       "background": "central_room",
-      "text": "Sérgio, me escuta! Se a gente automatizar a planilha e cruzar com a câmera infravermelha, a gente reduz o tempo de preparação pela metade! Só preciso achar onde deixei a fita métrica...",
-      "next": "ep1_salao_antigos_02"
+      "text": "Sérgio, me escuta! Se a gente automatizar a planilha e cruzar com a câmera infravermelha, reduz o tempo de preparação pela metade! Só preciso achar onde deixei a fita métrica...",
+      "next": "ep1_salao_02"
     },
-    "ep1_salao_antigos_02": {
-      "id": "ep1_salao_antigos_02",
+    "ep1_salao_02": {
+      "id": "ep1_salao_02",
       "speaker": "Sérgio",
       "characterId": "sergio",
       "expression": "chill",
       "background": "central_room",
-      "text": "(Virando o tronco inteiro como um bloco único, com o jaleco todo amassado): Daniel... você colocou a fita métrica no bolso da minha mochila há dez minutos. E acho que esqueci uma chave azul no meu bolso também.",
-      "next": "ep1_salao_antigos_03"
+      "text": "(Com o jaleco amassado e um sorriso tranquilo) Daniel, a fita métrica tá no bolso da sua calça. De novo. (Ele se vira pra você.) Ah, você deve ser a pessoa nova. Tá procurando isso aqui? (Ele balança uma chave azul.)",
+      "next": "ep1_salao_03"
     },
-    "ep1_salao_antigos_03": {
-      "id": "ep1_salao_antigos_03",
+    "ep1_salao_03": {
+      "id": "ep1_salao_03",
+      "speaker": "Sérgio",
+      "characterId": "sergio",
+      "expression": "neutral",
+      "background": "central_room",
+      "text": "Peguei cedo pra deixar a Sala 1 pronta pro Gabriel. Ele tá com cara de quem não dorme há uma semana, achei que ia ajudar. Só esqueci de avisar a ele... clássico.",
+      "sfx": "none",
+      "next": "ep1_salao_04"
+    },
+    "ep1_salao_04": {
+      "id": "ep1_salao_04",
+      "speaker": "Narrador",
+      "characterId": null,
+      "expression": null,
+      "background": "central_room",
+      "text": "Enquanto Sérgio fala, a tela do celular dele acende. Você vê de relance o assunto de um e-mail: 'PPG — Prazo final para depósito da qualificação'. Ele bloqueia a tela rápido, ainda sorrindo.",
+      "bgm": "tension",
+      "next": "ep1_salao_05"
+    },
+    "ep1_salao_05": {
+      "id": "ep1_salao_05",
       "speaker": "Fernanda",
       "characterId": "fernanda",
-      "expression": "teasing",
+      "expression": "eye_roll",
       "background": "central_room",
-      "text": "Impressionante como vocês dois juntos conseguem perder três materiais por minuto. Olha lá, deixaram até a pessoa nova esperando no meio do salão.",
+      "text": "(Aproximando-se de braços cruzados) Que fofo, o Sérgio fazendo o trabalho do Daniel de novo. Alguém nesse grupo precisa lembrar das coisas, né? Já que tem gente que esquece até de quem trabalhou com ele.",
+      "bgm": "tension",
+      "next": "ep1_salao_06"
+    },
+    "ep1_salao_06": {
+      "id": "ep1_salao_06",
+      "speaker": "Daniel",
+      "characterId": "daniel",
+      "expression": "awkward",
+      "background": "central_room",
+      "text": "Fernanda... não é bem assim. Eu ia te explicar ontem, mas—",
+      "bgm": "tension",
+      "next": "ep1_salao_07"
+    },
+    "ep1_salao_07": {
+      "id": "ep1_salao_07",
+      "speaker": "Fernanda",
+      "characterId": "fernanda",
+      "expression": "neutral",
+      "background": "central_room",
+      "text": "Agora não, Daniel. Tem gente nova olhando.",
+      "bgm": "tension",
       "choices": [
         {
-          "text": "Pelo visto cheguei bem na hora de resgatar a chave do TMS e salvar vocês da bronca do Gabs!",
-          "lomChange": { "daniel": 5, "sergio": 5, "fernanda": 0 },
+          "text": "(Quebrar o gelo) Bom, pelo menos a chave apareceu! O Gabriel vai ficar feliz... ou quase.",
+          "lomChange": { "daniel": 5, "sergio": 5 },
           "next": "ep1_antigos_a"
         },
         {
-          "text": "Deixa eu adivinhar, Fernanda: você fica só de camarote cronometrando o caos deles?",
-          "lomChange": { "fernanda": 5, "daniel": 5, "sergio": 0 },
+          "text": "Fernanda, acho que eu cheguei num momento ruim. Se quiser, eu volto depois.",
+          "lomChange": { "fernanda": 10 },
           "next": "ep1_antigos_b"
         },
         {
-          "text": "Sérgio, me dá logo essa chave antes que o Gabs ache que a culpa é minha.",
-          "lomChange": { "daniel": -5, "sergio": -5, "fernanda": -5 },
+          "text": "Vocês dois podiam resolver isso fora do salão, né? Tá todo mundo ouvindo.",
+          "lomChange": { "fernanda": -5, "daniel": -5 },
           "next": "ep1_antigos_c"
         }
       ]
     },
     "ep1_antigos_a": {
       "id": "ep1_antigos_a",
-      "speaker": "Daniel",
-      "characterId": "daniel",
+      "speaker": "Sérgio",
+      "characterId": "sergio",
       "expression": "laughing",
       "background": "central_room",
-      "text": "Hahaha! Já chegou entendendo o espírito de equipe do LANA! Passa a chave aí, Robozão, que essa pessoa tem futuro aqui!",
-      "next": "ep1_end_01"
+      "text": "Hahaha! 'Ou quase' é o máximo de felicidade que o Gabriel demonstra. Gostei de você.",
+      "next": "ep1_salao_08"
     },
     "ep1_antigos_b": {
       "id": "ep1_antigos_b",
@@ -257,25 +511,165 @@
       "characterId": "fernanda",
       "expression": "warm",
       "background": "central_room",
-      "text": "Alguém precisa manter os pés no chão nesse grupo, né? Gostei de você, não se intimidou no primeiro dia. Toma aqui a chave que tirei do bolso do Sérgio.",
-      "next": "ep1_end_01"
+      "text": "(Ela suspira e descruza os braços.) ...Não, desculpa. Você não tem nada a ver com isso. Prazer, eu sou a Fernanda. Pega a chave e foge enquanto pode.",
+      "sfx": "none",
+      "next": "ep1_salao_08"
     },
     "ep1_antigos_c": {
       "id": "ep1_antigos_c",
+      "speaker": "Daniel",
+      "characterId": "daniel",
+      "expression": "awkward",
+      "background": "central_room",
+      "text": "(Ele coça a nuca, sem graça, enquanto Fernanda se afasta em silêncio.) É... justo. Foi mal. A gente não costuma ser assim.",
+      "next": "ep1_salao_08"
+    },
+    "ep1_salao_08": {
+      "id": "ep1_salao_08",
       "speaker": "Sérgio",
       "characterId": "sergio",
-      "expression": "robotic_blank",
+      "expression": "chill",
       "background": "central_room",
-      "text": "Opa... calma aí, sem estresse. Tá na mão.",
-      "next": "ep1_end_01"
+      "text": "(Sérgio coloca a chave na sua mão e baixa a voz.) Relaxa. Eles se gostam muito, só não sabem conversar. ...Igual a todo mundo aqui, no fundo.",
+      "next": "ep1_gabs_end_01"
     },
-    "ep1_end_01": {
-      "id": "ep1_end_01",
-      "speaker": "Gabriel (Gabs)",
+    "ep1_gabs_end_01": {
+      "id": "ep1_gabs_end_01",
+      "speaker": "Gabriel",
+      "characterId": "gabs",
+      "expression": "neutral",
+      "background": "central_room",
+      "text": "Achou. E sem se perder nas distrações do Salão Central, imagino. Quem estava com ela?",
+      "choices": [
+        {
+          "text": "O Sérgio. Ele pegou cedo pra deixar a Sala 1 pronta pra você.",
+          "lomChange": { "sergio": 5, "gabs": 5 },
+          "next": "ep1_gabs_end_a"
+        },
+        {
+          "text": "Estava rodando pelo salão. O importante é que voltou.",
+          "lomChange": { "sergio": 5 },
+          "next": "ep1_gabs_end_b"
+        },
+        {
+          "text": "Com o Sérgio. Ele esqueceu de te avisar e ficou com ela no bolso.",
+          "lomChange": { "sergio": -5 },
+          "next": "ep1_gabs_end_c"
+        }
+      ]
+    },
+    "ep1_gabs_end_a": {
+      "id": "ep1_gabs_end_a",
+      "speaker": "Gabriel",
+      "characterId": "gabs",
+      "expression": "tired",
+      "background": "central_room",
+      "text": "(Ele olha pro fundo do salão por um momento.) ...Ele fez isso por mim? Hm. Eu tenho sido duro com ele ultimamente.",
+      "bgm": "casual",
+      "next": "ep1_gabs_end_02"
+    },
+    "ep1_gabs_end_b": {
+      "id": "ep1_gabs_end_b",
+      "speaker": "Gabriel",
+      "characterId": "gabs",
+      "expression": "neutral",
+      "background": "central_room",
+      "text": "Resposta diplomática. Anotado.",
+      "next": "ep1_gabs_end_02"
+    },
+    "ep1_gabs_end_c": {
+      "id": "ep1_gabs_end_c",
+      "speaker": "Gabriel",
+      "characterId": "gabs",
+      "expression": "stern",
+      "background": "central_room",
+      "text": "Típico. Eu falo com ele depois.",
+      "next": "ep1_gabs_end_02"
+    },
+    "ep1_gabs_end_02": {
+      "id": "ep1_gabs_end_02",
+      "speaker": "Gabriel",
       "characterId": "gabs",
       "expression": "approving",
       "background": "central_room",
-      "text": "Bom trabalho. Conseguiu recuperar a chave sem se perder nas distrações do Salão Central. Amanhã você vai acompanhar as montagens de tDCS. Esteja aqui no horário.",
+      "text": "Bom trabalho hoje. Amanhã você acompanha as montagens de tDCS do Daniel. Esteja aqui no horário.",
+      "sfx": "none",
+      "next": "ep1_saida_01"
+    },
+    "ep1_saida_01": {
+      "id": "ep1_saida_01",
+      "speaker": "Narrador",
+      "characterId": null,
+      "expression": null,
+      "background": "hallway_lana",
+      "text": "Fim do expediente. Na saída, você encontra Sérgio sentado nos degraus do corredor, olhando para o celular com o pensamento longe dali.",
+      "bgm": "romance",
+      "next": "ep1_saida_02"
+    },
+    "ep1_saida_02": {
+      "id": "ep1_saida_02",
+      "speaker": "Sérgio",
+      "characterId": "sergio",
+      "expression": "robotic_blank",
+      "background": "hallway_lana",
+      "text": "Ah... oi. Não te vi chegando. (Ele guarda o celular no bolso.) Sobreviveu ao primeiro dia?",
+      "bgm": "romance",
+      "choices": [
+        {
+          "text": "Sobrevivi. E você? Aquele e-mail de mais cedo parecia pesado.",
+          "lomChange": { "sergio": 10 },
+          "next": "ep1_saida_a"
+        },
+        {
+          "text": "Graças a você e à chave! Valeu de verdade.",
+          "lomChange": { "sergio": 5 },
+          "next": "ep1_saida_b"
+        },
+        {
+          "text": "Sobrevivi! Bom, até amanhã!",
+          "lomChange": { "sergio": 0 },
+          "next": "ep1_saida_c"
+        }
+      ]
+    },
+    "ep1_saida_a": {
+      "id": "ep1_saida_a",
+      "speaker": "Sérgio",
+      "characterId": "sergio",
+      "expression": "neutral",
+      "background": "hallway_lana",
+      "text": "(Ele fica em silêncio por um tempo.) ...Você repara nas coisas, né? É a qualificação. Tá chegando, e eu não sei se... deixa pra lá. Outro dia eu te conto.",
+      "bgm": "romance",
+      "next": "ep1_end"
+    },
+    "ep1_saida_b": {
+      "id": "ep1_saida_b",
+      "speaker": "Sérgio",
+      "characterId": "sergio",
+      "expression": "laughing",
+      "background": "hallway_lana",
+      "text": "Que nada! Eu só fiquei com ela no bolso. O trabalho todo foi seu. Bem-vindo(a) ao LANA.",
+      "sfx": "none",
+      "next": "ep1_end"
+    },
+    "ep1_saida_c": {
+      "id": "ep1_saida_c",
+      "speaker": "Sérgio",
+      "characterId": "sergio",
+      "expression": "chill",
+      "background": "hallway_lana",
+      "text": "Até amanhã. Traz paciência, o Daniel vai estar inspirado.",
+      "next": "ep1_end"
+    },
+    "ep1_end": {
+      "id": "ep1_end",
+      "speaker": "Narrador",
+      "characterId": null,
+      "expression": null,
+      "background": "hallway_lana",
+      "text": "Você atravessa o corredor com a sensação de que o LANA é muito mais do que macas e estimuladores. Por trás de cada jaleco, tem alguém carregando alguma coisa.",
+      "bgm": "romance",
+      "sfx": "none",
       "next": null
     }
   }

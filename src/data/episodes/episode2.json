@@ -10,6 +10,7 @@
       "expression": null,
       "background": "central_room",
       "text": "Segundo dia no LANA. No Salão Central, Álex está com o fone de ouvido pendurado no pescoço sobre uma camiseta de banda de rock por baixo do jaleco, separando cabos vermelhos e pretos de tDCS.",
+      "sfx": "none",
       "next": "ep2_02"
     },
     "ep2_02": {
@@ -18,7 +19,7 @@
       "characterId": "rhayssa",
       "expression": "in_love",
       "background": "central_room",
-      "text": "Álex, amor, passei só pra te deixar essa caneta marcadora antes de eu ir revisar minha dissertação. O Daniel já chegou com as fichas da coleta de hoje?",
+      "text": "Álex, amor, passei só pra te deixar essa caneta marcadora antes de ir revisar minha dissertação. O Daniel já chegou com as fichas da coleta de hoje?",
       "next": "ep2_03"
     },
     "ep2_03": {
@@ -27,7 +28,8 @@
       "characterId": "alex",
       "expression": "happy",
       "background": "central_room",
-      "text": "Valeu, Rhay! O Daniel já tá vindo aí a mil por hora. Ô, você que começou ontem, chega mais! Vai acompanhar nossa coleta de tDCS hoje?",
+      "text": "Valeu, Rhayssa! O Daniel já tá vindo aí. Ô, você que começou ontem, chega mais! Vai acompanhar nossa coleta de tDCS hoje?",
+      "bgm": "casual",
       "choices": [
         {
           "text": "Com certeza! Quero ver na prática a medição do sistema 10-20. Aliás, bela camiseta de banda, Álex!",
@@ -35,7 +37,7 @@
           "next": "ep2_alex_a"
         },
         {
-          "text": "Vou sim. O Gabs mandou eu supervisionar se vocês não vão atrasar a maca.",
+          "text": "Vou sim. O Gabriel mandou eu supervisionar se vocês não vão atrasar a maca.",
           "lomChange": { "alex": -5, "rhayssa": -5 },
           "next": "ep2_alex_b"
         },
@@ -53,7 +55,7 @@
       "expression": "happy",
       "background": "central_room",
       "text": "Opa, finalmente mais alguém com bom gosto musical por aqui! Bora preparar a bancada então.",
-      "next": "ep2_ben_luis_01"
+      "next": "ep2_clima_01"
     },
     "ep2_alex_b": {
       "id": "ep2_alex_b",
@@ -61,8 +63,8 @@
       "characterId": "rhayssa",
       "expression": "stressed",
       "background": "central_room",
-      "text": "Ih, não precisa vir no modo fiscal do Gabs não, o Álex deixa tudo pronto no horário...",
-      "next": "ep2_ben_luis_01"
+      "text": "Ih, não precisa vir no modo fiscal do Gabriel não. O Álex deixa tudo pronto no horário...",
+      "next": "ep2_clima_01"
     },
     "ep2_alex_c": {
       "id": "ep2_alex_c",
@@ -71,6 +73,57 @@
       "expression": "neutral",
       "background": "central_room",
       "text": "Que ótimo ter alguém prestativo ajudando! Assim o Álex termina a tempo de almoçar comigo.",
+      "bgm": "casual",
+      "next": "ep2_clima_01"
+    },
+    "ep2_clima_01": {
+      "id": "ep2_clima_01",
+      "speaker": "Narrador",
+      "characterId": null,
+      "expression": null,
+      "background": "central_room",
+      "text": "Fernanda atravessa o salão com uma pasta de artigos. Daniel entra pela outra porta no mesmo instante. Os dois se olham — e ela muda de direção sem dizer uma palavra.",
+      "bgm": "tension",
+      "sfx": "none",
+      "next": "ep2_clima_02"
+    },
+    "ep2_clima_02": {
+      "id": "ep2_clima_02",
+      "speaker": "Álex",
+      "characterId": "alex",
+      "expression": "overwhelmed",
+      "background": "central_room",
+      "text": "(Baixinho) Eita. Desde ontem é assim. O Daniel tá mais disperso que o normal, e olha que o normal dele já é nível furacão.",
+      "bgm": "tension",
+      "choices": [
+        {
+          "text": "Você sabe o que aconteceu entre eles?",
+          "lomChange": { "rhayssa": 0 },
+          "next": "ep2_clima_a"
+        },
+        {
+          "text": "Deve ser difícil trabalhar no meio desse clima. Você tá bem?",
+          "lomChange": { "alex": 5, "rhayssa": 5 },
+          "next": "ep2_clima_b"
+        }
+      ]
+    },
+    "ep2_clima_a": {
+      "id": "ep2_clima_a",
+      "speaker": "Rhayssa",
+      "characterId": "rhayssa",
+      "expression": "curious",
+      "background": "central_room",
+      "text": "A gente só sabe que tem a ver com um resumo pro congresso de neuromodulação. O resto... é entre eles.",
+      "next": "ep2_ben_luis_01"
+    },
+    "ep2_clima_b": {
+      "id": "ep2_clima_b",
+      "speaker": "Álex",
+      "characterId": "alex",
+      "expression": "happy",
+      "background": "central_room",
+      "text": "Valeu por perguntar, sério. Eu boto um rock no fone e sigo. Mas o projeto é do Daniel, então quando ele trava, eu travo junto.",
       "next": "ep2_ben_luis_01"
     },
     "ep2_ben_luis_01": {
@@ -98,28 +151,60 @@
       "expression": "chaotic_excited",
       "background": "central_room",
       "text": "(Chegando com três artigos debaixo do braço e um copo de café): Que apito é esse?! Ben, Luís, vocês colocaram as esponjas secas de novo ou inverteram o ânodo com o cátodo?!",
-      "next": "ep2_daniel_02"
+      "next": "ep2_fer_01"
     },
-    "ep2_daniel_02": {
-      "id": "ep2_daniel_02",
+    "ep2_fer_01": {
+      "id": "ep2_fer_01",
       "speaker": "Fernanda",
       "characterId": "fernanda",
       "expression": "eye_roll",
       "background": "central_room",
-      "text": "(Passando pelo salão com um sorriso irônico): Cinco minutos que o Daniel entra na sala e já tem alarme soando. Querem que eu chame um bombeiro ou vocês dão conta?",
+      "text": "(Parando no meio do salão, com um sorriso que não chega aos olhos) Cinco minutos de Daniel na sala e já tem alarme tocando. Faz sentido. Ele também faz tudo na correria e esquece os detalhes. E as pessoas.",
+      "bgm": "tension",
+      "next": "ep2_fer_02"
+    },
+    "ep2_fer_02": {
+      "id": "ep2_fer_02",
+      "speaker": "Daniel",
+      "characterId": "daniel",
+      "expression": "awkward",
+      "background": "central_room",
+      "text": "Fernanda, por favor. Aqui não.",
+      "bgm": "tension",
+      "next": "ep2_fer_03"
+    },
+    "ep2_fer_03": {
+      "id": "ep2_fer_03",
+      "speaker": "Narrador",
+      "characterId": null,
+      "expression": null,
+      "background": "central_room",
+      "text": "Um silêncio constrangedor toma conta do salão. Ben e Luís se entreolham. No meio de tudo, o tDCS continua apitando: HIGH IMPEDANCE.",
+      "bgm": "tension",
+      "sfx": "tdcs",
+      "next": "ep2_fix_choice"
+    },
+    "ep2_fix_choice": {
+      "id": "ep2_fix_choice",
+      "speaker": "Você",
+      "characterId": "protagonist",
+      "expression": null,
+      "background": "central_room",
+      "text": "(Alguém precisa resolver isso. E rápido.)",
+      "bgm": "tension",
       "choices": [
         {
           "text": "Deixa comigo! As esponjas estão secas — vou umedecer com salina na medida certa pra baixar a impedância sem escorrer.",
-          "lomChange": { "daniel": 5, "alex": 5, "fernanda": 5, "ben_luis": 5 },
+          "lomChange": { "daniel": 5, "alex": 5, "ben_luis": 5 },
           "next": "ep2_fix_a"
         },
         {
-          "text": "Relaxa, Fernanda, está tudo sob controle! E Daniel, já conferi que o cabo vermelho (ânodo) está certinho no C3.",
-          "lomChange": { "daniel": 5, "fernanda": 5, "alex": 0 },
+          "text": "Fernanda, me ajuda a conferir a montagem? Você deve ter olho bom pra isso.",
+          "lomChange": { "fernanda": 10, "daniel": 5 },
           "next": "ep2_fix_b"
         },
         {
-          "text": "Ben e Luís fizeram tudo errado de novo! Vou chamar o Gabs pra ver isso.",
+          "text": "Ben e Luís fizeram tudo errado de novo! Vou chamar o Gabriel pra ver isso.",
           "lomChange": { "ben_luis": -10, "daniel": -5, "alex": -5 },
           "next": "ep2_fix_c"
         }
@@ -131,8 +216,9 @@
       "characterId": "daniel",
       "expression": "laughing",
       "background": "central_room",
-      "text": "BINGO! Olha aí a impedância caindo na hora! Viu só, Fernanda? Minha equipe trabalha em perfeita harmonia caótica!",
-      "next": "ep2_end"
+      "text": "BINGO! A impedância caiu na hora! (O sorriso dele some um pouco quando ele olha na direção da Fernanda.) ...Valeu. Sério.",
+      "sfx": "none",
+      "next": "ep2_ben_luis_obrigado"
     },
     "ep2_fix_b": {
       "id": "ep2_fix_b",
@@ -140,8 +226,9 @@
       "characterId": "fernanda",
       "expression": "teasing",
       "background": "central_room",
-      "text": "Sorte a sua que a pessoa nova sabe diferenciar o C3 do Cz, viu Daniel? Senão seu projeto ia estimular a orelha do paciente.",
-      "next": "ep2_end"
+      "text": "(Ela hesita, mas se aproxima.) Esponja seca e... o cabo vermelho tá no C4, não no C3. Sorte de vocês que eu passei. (Por um segundo, ela e Daniel quase sorriem ao mesmo tempo.)",
+      "sfx": "none",
+      "next": "ep2_ben_luis_obrigado"
     },
     "ep2_fix_c": {
       "id": "ep2_fix_c",
@@ -149,16 +236,422 @@
       "characterId": "alex",
       "expression": "overwhelmed",
       "background": "central_room",
-      "text": "Pô, não precisava dedurar os meninos pro Gabs... Era só pingar um pouco de solução salina na esponja.",
-      "next": "ep2_end"
+      "text": "Pô, não precisava dedurar os meninos pro Gabriel... Era só pingar um pouco de solução salina na esponja.",
+      "next": "ep2_bronca_01"
     },
-    "ep2_end": {
-      "id": "ep2_end",
+    "ep2_bronca_01": {
+      "id": "ep2_bronca_01",
+      "speaker": "Gabriel",
+      "characterId": "gabs",
+      "expression": "stern",
+      "background": "central_room",
+      "text": "(Chegando a passos rápidos) Quem montou isso? Ben, Luís: vocês vão refazer o treinamento de montagem inteiro. Hoje.",
+      "next": "ep2_bronca_02"
+    },
+    "ep2_bronca_02": {
+      "id": "ep2_bronca_02",
+      "speaker": "Ben & Luís",
+      "characterId": "ben_luis",
+      "expression": "panicked_newbies",
+      "background": "central_room",
+      "text": "A gente... vai ser cortado do lab, Gabriel?",
+      "next": "ep2_bronca_03"
+    },
+    "ep2_bronca_03": {
+      "id": "ep2_bronca_03",
+      "speaker": "Gabriel",
+      "characterId": "gabs",
+      "expression": "tired",
+      "background": "central_room",
+      "text": "(Ele suspira, de repente muito cansado.) Ninguém vai ser cortado. Só... façam direito. Eu não tenho energia pra apagar mais incêndio essa semana.",
+      "next": "ep2_samara_01"
+    },
+    "ep2_ben_luis_obrigado": {
+      "id": "ep2_ben_luis_obrigado",
       "speaker": "Ben & Luís",
       "characterId": "ben_luis",
       "expression": "goofing_around",
       "background": "central_room",
-      "text": "Ufa! Valeu por salvar nossa pele! Na próxima a gente promete não esquecer o soro fisiológico... hehehe!",
+      "text": "Ufa! Valeu por salvar nossa pele antes do Gabriel ver! Na próxima a gente promete não esquecer o soro fisiológico... hehehe!",
+      "next": "ep2_samara_01"
+    },
+    "ep2_samara_01": {
+      "id": "ep2_samara_01",
+      "speaker": "Narrador",
+      "characterId": null,
+      "expression": null,
+      "background": "central_room",
+      "text": "Enquanto o grupo se dispersa, você sente um toque leve no ombro. É a Samara, segurando a fita métrica.",
+      "bgm": "casual",
+      "next": "ep2_samara_02"
+    },
+    "ep2_samara_02": {
+      "id": "ep2_samara_02",
+      "speaker": "Samara",
+      "characterId": "samara",
+      "expression": "observant",
+      "background": "central_room",
+      "text": "(Quase sussurrando, só pra você) ...O C3 do manequim está dois centímetros pra frente. Mediram a partir da orelha errada.",
+      "choices": [
+        {
+          "text": "(Baixinho) Boa! Vou corrigir discretamente. Obrigado(a), Samara.",
+          "lomChange": { "samara": 10 },
+          "next": "ep2_samara_a"
+        },
+        {
+          "text": "Gente! A Samara achou outro erro! Ela é um gênio!",
+          "lomChange": { "samara": -5, "ben_luis": 5 },
+          "next": "ep2_samara_b"
+        },
+        {
+          "text": "Por que você não fala isso pra todo mundo?",
+          "lomChange": { "samara": 0 },
+          "next": "ep2_samara_c"
+        }
+      ]
+    },
+    "ep2_samara_a": {
+      "id": "ep2_samara_a",
+      "speaker": "Samara",
+      "characterId": "samara",
+      "expression": "shy_smile",
+      "background": "central_room",
+      "text": "(Um sorriso mínimo aparece.) ...De nada. Você não faz barulho. Isso é bom.",
+      "next": "ep2_copa_01"
+    },
+    "ep2_samara_b": {
+      "id": "ep2_samara_b",
+      "speaker": "Samara",
+      "characterId": "samara",
+      "expression": "startled",
+      "background": "central_room",
+      "text": "(Todo mundo olha pra ela de uma vez. Samara fica vermelha e se esconde atrás da prancheta.) ...Eu... vou pegar mais salina.",
+      "next": "ep2_copa_01"
+    },
+    "ep2_samara_c": {
+      "id": "ep2_samara_c",
+      "speaker": "Samara",
+      "characterId": "samara",
+      "expression": "neutral",
+      "background": "central_room",
+      "text": "...Quando eu falo alto, todo mundo para pra olhar. Prefiro que o erro seja corrigido do que eu ser vista corrigindo.",
+      "next": "ep2_copa_01"
+    },
+    "ep2_copa_01": {
+      "id": "ep2_copa_01",
+      "speaker": "Narrador",
+      "characterId": null,
+      "expression": null,
+      "background": "copa",
+      "text": "Hora do almoço. A Copa está vazia, exceto por Fernanda, mexendo um café que já esfriou há muito tempo.",
+      "bgm": "casual",
+      "next": "ep2_copa_02"
+    },
+    "ep2_copa_02": {
+      "id": "ep2_copa_02",
+      "speaker": "Fernanda",
+      "characterId": "fernanda",
+      "expression": "neutral",
+      "background": "copa",
+      "text": "Ah. Oi. Pode entrar, a Copa não é minha. Embora a Letícia discorde.",
+      "choices": [
+        {
+          "text": "Tá tudo bem? Hoje de manhã o clima pesou.",
+          "lomChange": { "fernanda": 5 },
+          "next": "ep2_copa_a"
+        },
+        {
+          "text": "(Pegar um café, sentar e esperar ela falar, se quiser.)",
+          "lomChange": { "fernanda": 10 },
+          "next": "ep2_copa_b"
+        },
+        {
+          "text": "Você pegou pesado com o Daniel lá no salão.",
+          "lomChange": { "fernanda": -5, "daniel": 5 },
+          "next": "ep2_copa_c"
+        }
+      ]
+    },
+    "ep2_copa_a": {
+      "id": "ep2_copa_a",
+      "speaker": "Fernanda",
+      "characterId": "fernanda",
+      "expression": "neutral",
+      "background": "copa",
+      "text": "(Ela ri, sem graça.) Tão óbvio assim? ...Senta aí.",
+      "next": "ep2_copa_03"
+    },
+    "ep2_copa_b": {
+      "id": "ep2_copa_b",
+      "speaker": "Fernanda",
+      "characterId": "fernanda",
+      "expression": "warm",
+      "background": "copa",
+      "text": "(Depois de um tempo) ...Obrigada por não perguntar de cara. Todo mundo aqui pergunta.",
+      "next": "ep2_copa_03"
+    },
+    "ep2_copa_c": {
+      "id": "ep2_copa_c",
+      "speaker": "Fernanda",
+      "characterId": "fernanda",
+      "expression": "eye_roll",
+      "background": "copa",
+      "text": "Peguei, é? Talvez. (Ela suspira.) Mas você não sabe a história inteira.",
+      "next": "ep2_copa_03"
+    },
+    "ep2_copa_03": {
+      "id": "ep2_copa_03",
+      "speaker": "Fernanda",
+      "characterId": "fernanda",
+      "expression": "neutral",
+      "background": "copa",
+      "text": "No meu primeiro ano de mestrado, eu e o Daniel montamos um protocolo piloto juntos. Noites aqui no lab, café da Copa, tudo. Era nosso. Ontem saiu a lista de resumos do congresso... e o protocolo tá lá. Só com o nome dele.",
+      "bgm": "tension",
+      "next": "ep2_copa_04"
+    },
+    "ep2_copa_04": {
+      "id": "ep2_copa_04",
+      "speaker": "Fernanda",
+      "characterId": "fernanda",
+      "expression": "neutral",
+      "background": "copa",
+      "text": "E nem é pelo currículo. É que naquela época a gente era... mais que parceiros de pesquisa. Ver meu nome sumir daquilo foi como ver aquele tempo sumir junto.",
+      "bgm": "romance",
+      "choices": [
+        {
+          "text": "Faz total sentido você ter ficado magoada. Não é só sobre o resumo.",
+          "lomChange": { "fernanda": 10 },
+          "next": "ep2_copa_d"
+        },
+        {
+          "text": "Será que não foi um engano? O Daniel é caótico, mas não parece maldoso.",
+          "lomChange": { "daniel": 5 },
+          "next": "ep2_copa_e"
+        },
+        {
+          "text": "Você já perguntou pra ele direto, sem plateia?",
+          "lomChange": { "fernanda": 5, "daniel": 5 },
+          "next": "ep2_copa_f"
+        }
+      ]
+    },
+    "ep2_copa_d": {
+      "id": "ep2_copa_d",
+      "speaker": "Fernanda",
+      "characterId": "fernanda",
+      "expression": "warm",
+      "background": "copa",
+      "text": "(Os olhos dela brilham por um segundo.) ...É. Exatamente isso. Obrigada. Ninguém tinha dito isso em voz alta.",
+      "bgm": "romance",
+      "next": "ep2_corredor_01"
+    },
+    "ep2_copa_e": {
+      "id": "ep2_copa_e",
+      "speaker": "Fernanda",
+      "characterId": "fernanda",
+      "expression": "eye_roll",
+      "background": "copa",
+      "text": "Caótico ele é. Maldoso, não. Mas esquecer também machuca, sabia?",
+      "next": "ep2_corredor_01"
+    },
+    "ep2_copa_f": {
+      "id": "ep2_copa_f",
+      "speaker": "Fernanda",
+      "characterId": "fernanda",
+      "expression": "neutral",
+      "background": "copa",
+      "text": "...Não. Fiquei com medo da resposta. Se ele disser que só esqueceu, dói do mesmo jeito.",
+      "bgm": "romance",
+      "next": "ep2_corredor_01"
+    },
+    "ep2_corredor_01": {
+      "id": "ep2_corredor_01",
+      "speaker": "Narrador",
+      "characterId": null,
+      "expression": null,
+      "background": "hallway_lana",
+      "text": "Na saída da Copa, Daniel está encostado na parede do corredor, fingindo ler um artigo. De cabeça pra baixo.",
+      "bgm": "casual",
+      "sfx": "none",
+      "next": "ep2_corredor_02"
+    },
+    "ep2_corredor_02": {
+      "id": "ep2_corredor_02",
+      "speaker": "Daniel",
+      "characterId": "daniel",
+      "expression": "awkward",
+      "background": "hallway_lana",
+      "text": "Ela tá muito brava comigo, né? Pode falar.",
+      "choices": [
+        {
+          "text": "Brava não. Magoada. Acho que você devia conversar com ela, sem plateia.",
+          "lomChange": { "daniel": 5, "fernanda": 5 },
+          "next": "ep2_corredor_a"
+        },
+        {
+          "text": "Daniel, por que você tirou o nome dela do resumo?",
+          "lomChange": { "daniel": -5 },
+          "next": "ep2_corredor_b"
+        },
+        {
+          "text": "Não é meu papel ser mensageiro(a) de vocês dois.",
+          "lomChange": { "daniel": 0 },
+          "next": "ep2_corredor_c"
+        }
+      ]
+    },
+    "ep2_corredor_a": {
+      "id": "ep2_corredor_a",
+      "speaker": "Daniel",
+      "characterId": "daniel",
+      "expression": "neutral",
+      "background": "hallway_lana",
+      "text": "(Ele fecha o artigo.) ...Magoada é pior. (Pausa.) Não é o que ela pensa. Eu queria resolver do jeito certo e acabei deixando pra depois. Como sempre.",
+      "next": "ep2_sergio_01"
+    },
+    "ep2_corredor_b": {
+      "id": "ep2_corredor_b",
+      "speaker": "Daniel",
+      "characterId": "daniel",
+      "expression": "awkward",
+      "background": "hallway_lana",
+      "text": "Eu não tirei! Quer dizer... o sistema do congresso só aceitava o apresentador no resumo curto. Tem outra coisa que eu tô preparando, mas... ainda não tá pronta.",
+      "next": "ep2_sergio_01"
+    },
+    "ep2_corredor_c": {
+      "id": "ep2_corredor_c",
+      "speaker": "Daniel",
+      "characterId": "daniel",
+      "expression": "laughing",
+      "background": "hallway_lana",
+      "text": "Justo, justo. Hahaha... (A risada morre rápido.) Eu vou dar um jeito. Eu sempre dou.",
+      "next": "ep2_sergio_01"
+    },
+    "ep2_sergio_01": {
+      "id": "ep2_sergio_01",
+      "speaker": "Narrador",
+      "characterId": null,
+      "expression": null,
+      "background": "central_room",
+      "text": "Fim do dia. O salão está vazio, exceto por Sérgio, sentado no tablado com o notebook aberto num documento em branco: 'QUALIFICAÇÃO — VERSÃO FINAL'.",
+      "bgm": "romance",
+      "next": "ep2_sergio_02"
+    },
+    "ep2_sergio_02": {
+      "id": "ep2_sergio_02",
+      "speaker": "Sérgio",
+      "characterId": "sergio",
+      "expression": "robotic_blank",
+      "background": "central_room",
+      "text": "(Ele encara a tela há tanto tempo que nem percebe você chegar.) ...Ah. Oi. Achei que você já tinha ido embora.",
+      "bgm": "romance",
+      "choices": [
+        {
+          "text": "Quer companhia? Posso ficar um pouco.",
+          "lomChange": { "sergio": 5 },
+          "next": "ep2_sergio_a"
+        },
+        {
+          "text": "Esse documento em branco tá te encarando faz tempo, né?",
+          "lomChange": { "sergio": 5 },
+          "next": "ep2_sergio_b"
+        }
+      ]
+    },
+    "ep2_sergio_a": {
+      "id": "ep2_sergio_a",
+      "speaker": "Sérgio",
+      "characterId": "sergio",
+      "expression": "chill",
+      "background": "central_room",
+      "text": "...Quero. Valeu.",
+      "bgm": "romance",
+      "next": "ep2_sergio_03"
+    },
+    "ep2_sergio_b": {
+      "id": "ep2_sergio_b",
+      "speaker": "Sérgio",
+      "characterId": "sergio",
+      "expression": "laughing",
+      "background": "central_room",
+      "text": "Hahaha... três horas. Ele tá ganhando.",
+      "bgm": "romance",
+      "next": "ep2_sergio_03"
+    },
+    "ep2_sergio_03": {
+      "id": "ep2_sergio_03",
+      "speaker": "Sérgio",
+      "characterId": "sergio",
+      "expression": "neutral",
+      "background": "central_room",
+      "text": "Posso te contar uma coisa? Uma clínica aqui de Recife me ofereceu uma vaga. Paga o triplo da bolsa. E faz meses que eu acordo sem saber se a pesquisa ainda é pra mim.",
+      "bgm": "romance",
+      "next": "ep2_sergio_04"
+    },
+    "ep2_sergio_04": {
+      "id": "ep2_sergio_04",
+      "speaker": "Sérgio",
+      "characterId": "sergio",
+      "expression": "robotic_blank",
+      "background": "central_room",
+      "text": "Todo mundo me vê como o cara tranquilo, que não se estressa com nada. Eu também me via assim. Mas eu tô cansado de fingir que tá tudo leve.",
+      "bgm": "romance",
+      "choices": [
+        {
+          "text": "Você não precisa decidir hoje. Mas também não precisa carregar isso sozinho.",
+          "lomChange": { "sergio": 10 },
+          "next": "ep2_sergio_c"
+        },
+        {
+          "text": "Você é ótimo aqui. Seria uma perda enorme pro LANA.",
+          "lomChange": { "sergio": 5 },
+          "next": "ep2_sergio_d"
+        },
+        {
+          "text": "Já falou com o Daniel? Ele é seu melhor amigo.",
+          "lomChange": { "sergio": 0 },
+          "next": "ep2_sergio_e"
+        }
+      ]
+    },
+    "ep2_sergio_c": {
+      "id": "ep2_sergio_c",
+      "speaker": "Sérgio",
+      "characterId": "sergio",
+      "expression": "chill",
+      "background": "central_room",
+      "text": "(Ele solta o ar devagar, como se tivesse prendido a respiração o dia inteiro.) ...É a primeira vez que alguém me diz isso. Obrigado.",
+      "bgm": "romance",
+      "next": "ep2_end"
+    },
+    "ep2_sergio_d": {
+      "id": "ep2_sergio_d",
+      "speaker": "Sérgio",
+      "characterId": "sergio",
+      "expression": "laughing",
+      "background": "central_room",
+      "text": "Você fala igual minha mãe. (Ele sorri, mas o olhar continua longe.) Valeu. Mas ser bom em algo não quer dizer que é o lugar certo.",
+      "bgm": "romance",
+      "next": "ep2_end"
+    },
+    "ep2_sergio_e": {
+      "id": "ep2_sergio_e",
+      "speaker": "Sérgio",
+      "characterId": "sergio",
+      "expression": "neutral",
+      "background": "central_room",
+      "text": "Ainda não. O Daniel vai levar pro pessoal. Ele acha que a gente vai defender o doutorado junto um dia.",
+      "bgm": "romance",
+      "next": "ep2_end"
+    },
+    "ep2_end": {
+      "id": "ep2_end",
+      "speaker": "Sérgio",
+      "characterId": "sergio",
+      "expression": "chill",
+      "background": "central_room",
+      "text": "Faz um favor? Não conta pra ninguém ainda. Principalmente pro Daniel. Eu mesmo quero contar... quando souber o que dizer.",
+      "bgm": "romance",
       "next": null
     }
   }
