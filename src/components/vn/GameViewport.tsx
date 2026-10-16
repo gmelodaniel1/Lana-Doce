@@ -137,8 +137,8 @@ export const GameViewport: React.FC<GameViewportProps> = ({
         {/* Camada 2: Notificações Flutuantes de Afinidade (+5 LOM / -10 LOM) */}
         <AffinityNotification toast={activeToast} />
 
-        {/* Camada 3: Sprites dos Personagens */}
-        <div className="relative flex-1 w-full flex items-end justify-center pointer-events-none">
+        {/* Camada 3: Sprites dos Personagens (Ancorados ao fundo do viewport, atrás do diálogo) */}
+        <div className="absolute inset-x-0 bottom-0 top-16 flex items-end justify-center pointer-events-none z-10 overflow-hidden">
           {currentNode.secondarySprite && (
             <CharacterSprite config={currentNode.secondarySprite} />
           )}

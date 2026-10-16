@@ -71,7 +71,7 @@ export const CharacterSprite: React.FC<CharacterSpriteProps> = ({ config }) => {
   return (
     <div
       key={config.characterId}
-      className={`absolute bottom-20 z-10 pointer-events-none flex items-end h-[75vh] max-h-[720px] transition-all duration-500 ease-out ${positionClasses}`}
+      className={`absolute bottom-0 z-10 pointer-events-none flex items-end h-[82%] max-h-[780px] transition-all duration-500 ease-out ${positionClasses}`}
     >
       {/* Camada de animação de entrada ou reação (shake, bob) */}
       <div
