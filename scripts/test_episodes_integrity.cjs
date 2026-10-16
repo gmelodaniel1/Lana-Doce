@@ -41,8 +41,8 @@ for (const epNum of EPISODE_NUMBERS) {
 
   for (const [nodeId, node] of Object.entries(script.nodes)) {
     // 2. Verificar existência física do background (.webp ou fallback .jpg)
-    const webpRel = getBackgroundPath(node.background).replace(/^\//, '');
-    const jpgRel = getBackgroundFallbackPath(node.background).replace(/^\//, '');
+    const webpRel = getBackgroundPath(node.background).replace(/^\.?\//, '');
+    const jpgRel = getBackgroundFallbackPath(node.background).replace(/^\.?\//, '');
     const webpFile = path.join(PUBLIC_DIR, webpRel);
     const jpgFile = path.join(PUBLIC_DIR, jpgRel);
 

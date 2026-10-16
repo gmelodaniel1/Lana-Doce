@@ -13,16 +13,16 @@ const EXPRESSION_FALLBACKS: Record<string, string> = {
 };
 
 export function getSpritePath(characterId: string, expression: string): string {
-  return `/assets/sprites/${characterId}/${expression}.png?v=3`;
+  return `./assets/sprites/${characterId}/${expression}.png?v=3`;
 }
 
 export function getFallbackSpritePath(characterId: string, expression: string): string | null {
   const fallbackExpr = EXPRESSION_FALLBACKS[expression];
   if (fallbackExpr && fallbackExpr !== expression) {
-    return `/assets/sprites/${characterId}/${fallbackExpr}.png?v=3`;
+    return `./assets/sprites/${characterId}/${fallbackExpr}.png?v=3`;
   }
   if (expression !== 'neutral') {
-    return `/assets/sprites/${characterId}/neutral.png?v=3`;
+    return `./assets/sprites/${characterId}/neutral.png?v=3`;
   }
   return null;
 }
@@ -53,10 +53,10 @@ export function normalizeBackgroundId(backgroundId: string): BackgroundId {
 
 export function getBackgroundPath(backgroundId: string): string {
   const resolved = normalizeBackgroundId(backgroundId);
-  return `/assets/backgrounds/${resolved}.webp`;
+  return `./assets/backgrounds/${resolved}.webp`;
 }
 
 export function getBackgroundFallbackPath(backgroundId: string): string {
   const resolved = normalizeBackgroundId(backgroundId);
-  return `/assets/backgrounds/${resolved}.jpg`;
+  return `./assets/backgrounds/${resolved}.jpg`;
 }

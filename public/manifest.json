@@ -1,0 +1,18 @@
+{
+  "name": "Lana Doce - Amor Doce no LANA/UFPE",
+  "short_name": "Lana Doce",
+  "description": "Visual Novel científica do Laboratório de Neurociência Aplicada da UFPE",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#020617",
+  "theme_color": "#ec4899",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
