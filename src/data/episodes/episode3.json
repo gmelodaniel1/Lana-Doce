@@ -538,7 +538,7 @@
       "characterId": "daniel",
       "expression": "neutral",
       "background": "central_room",
-      "text": "Porque eu queria te fazer uma surpresa com o manuscrito pronto! Eu sei que sou atrapalhado e deixo tudo pra última hora, mas jamais ia esquecer quem construiu esse protocolo comigo desde o dia zero. Você é minha parceira de trincheira, Fernanda.",
+      "text": "Porque eu queria te entregar o manuscrito pronto! Eu sei que sou atrapalhado e deixo tudo pra última hora, mas jamais ia esquecer de quem construiu esse protocolo comigo desde o início.",
       "bgm": "casual",
       "next": "ep3_fer_05"
     },
@@ -548,7 +548,7 @@
       "characterId": "fernanda",
       "expression": "warm",
       "background": "central_room",
-      "text": "(Ela fica em silêncio por um segundo e solta um riso aliviado.) ...Olha só. Pela primeira vez, você pensou em algo sozinho. E pensou certo, seu cabeçudo.",
+      "text": "(Ela fica em silêncio por um segundo e solta um riso aliviado.) ...Olha só. Pela primeira vez, você pensou em algo sozinho. E pensou certo.",
       "bgm": "casual",
       "choices": [
         {
@@ -562,7 +562,7 @@
           "next": "ep3_fer_b"
         },
         {
-          "text": "Sabia que você só era desorganizado, Daniel, mas nunca traíra de bancada!",
+          "text": "Sabia que era só desorganização do Daniel, e não falta de consideração!",
           "lomChange": { "fernanda": 5, "daniel": 5 },
           "next": "ep3_fer_c"
         }
@@ -574,7 +574,7 @@
       "characterId": "fernanda",
       "expression": "warm",
       "background": "central_room",
-      "text": "(Fernanda dá um soquinho leve no ombro do Daniel e pisca pra você, agradecendo pelo apoio.)",
+      "text": "(Fernanda sorri, aliviada, e acena pra você agradecendo pela força.)",
       "bgm": "casual",
       "next": "ep3_samara_01"
     },
@@ -593,7 +593,7 @@
       "characterId": "fernanda",
       "expression": "teasing",
       "background": "central_room",
-      "text": "Desorganizado é elogio pra ele! Mas dessa vez está perdoado. (Ela guarda o artigo com orgulho na pasta.)",
+      "text": "Desorganizado é elogio pra ele! Mas dessa vez está perdoado. (Ela guarda o artigo na pasta.)",
       "next": "ep3_samara_01"
     },
     "ep3_samara_01": {
