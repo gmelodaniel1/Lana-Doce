@@ -355,7 +355,7 @@
       "characterId": "will",
       "expression": "tea_spilling",
       "background": "copa",
-      "text": "(Abaixando a voz) Aviso de utilidade pública: hoje o clima no fundo do salão tá estranho. A Fernanda chegou de cara fechada e não deu bom dia pro Daniel. E esses dois têm... história.",
+      "text": "(Abaixando a voz) Aviso de utilidade pública: hoje o clima no fundo do salão tá estranho. A Fernanda chegou de cara fechada e não deu bom dia pro Daniel. Logo eles, que são parceiros inseparáveis desde o início do mestrado.",
       "bgm": "tension",
       "next": "ep1_fofoca_02"
     },
@@ -369,7 +369,7 @@
       "bgm": "tension",
       "choices": [
         {
-          "text": "Que tipo de história? Agora fiquei curioso(a).",
+          "text": "Eles brigaram por quê? Agora fiquei curioso(a).",
           "lomChange": { "will": 5 },
           "next": "ep1_fofoca_a"
         },
@@ -391,7 +391,7 @@
       "characterId": "will",
       "expression": "chatty_excited",
       "background": "copa",
-      "text": "Não posso dar spoiler da temporada inteira. Digamos que eles já foram mais que colegas no mestrado, e quando isso acaba, sobra muita coisa não dita. Mas o babado de hoje é outro: envolve um congresso. Fica de olho!",
+      "text": "Eles até já tiveram um lance rápido lá no passado, mas hoje são praticamente irmãos de bancada. Por isso mesmo todo mundo estranhou: a treta de hoje é sobre autoria num congresso. Fica de olho!",
       "next": "ep1_salao_01"
     },
     "ep1_fofoca_b": {
@@ -530,7 +530,7 @@
       "characterId": "sergio",
       "expression": "chill",
       "background": "central_room",
-      "text": "(Sérgio coloca a chave na sua mão e baixa a voz.) Relaxa. Eles se gostam muito, só não sabem conversar. ...Igual a todo mundo aqui, no fundo.",
+      "text": "(Sérgio coloca a chave na sua mão e baixa a voz.) Relaxa. Eles são parceiros de bancada há anos, implicam feito irmãos mas se defendem sempre. Só que o Daniel vacilou na comunicação dessa vez.",
       "next": "ep1_gabs_end_01"
     },
     "ep1_gabs_end_01": {

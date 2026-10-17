@@ -415,16 +415,16 @@
       "characterId": "fernanda",
       "expression": "neutral",
       "background": "copa",
-      "text": "E nem é pelo currículo. É que naquela época a gente era... mais que parceiros de pesquisa. Ver meu nome sumir daquilo foi como ver aquele tempo sumir junto.",
-      "bgm": "romance",
+      "text": "E nem é só pelo currículo. O Daniel é um dos meus melhores amigos aqui dentro, a gente cresceu junto nesse laboratório. Ver meu nome de fora daquilo dá a sensação de que toda a nossa parceria não contou pra nada.",
+      "bgm": "casual",
       "choices": [
         {
-          "text": "Faz total sentido você ter ficado magoada. Não é só sobre o resumo.",
+          "text": "Faz total sentido você ter ficado chateada. É uma questão de consideração com a parceria de vocês.",
           "lomChange": { "fernanda": 10 },
           "next": "ep2_copa_d"
         },
         {
-          "text": "Será que não foi um engano? O Daniel é caótico, mas não parece maldoso.",
+          "text": "Será que não foi um engano? O Daniel é caótico, mas não parece desleal aos amigos.",
           "lomChange": { "daniel": 5 },
           "next": "ep2_copa_e"
         },
@@ -441,8 +441,8 @@
       "characterId": "fernanda",
       "expression": "warm",
       "background": "copa",
-      "text": "(Os olhos dela brilham por um segundo.) ...É. Exatamente isso. Obrigada. Ninguém tinha dito isso em voz alta.",
-      "bgm": "romance",
+      "text": "(Ela assente com um sorriso sincero.) ...É. Exatamente isso. Quando a amizade é grande, a falta de cuidado pesa mais. Obrigada por ouvir.",
+      "bgm": "casual",
       "next": "ep2_corredor_01"
     },
     "ep2_copa_e": {
@@ -451,7 +451,7 @@
       "characterId": "fernanda",
       "expression": "eye_roll",
       "background": "copa",
-      "text": "Caótico ele é. Maldoso, não. Mas esquecer também machuca, sabia?",
+      "text": "Caótico ele é. Desleal, não. Mas esquecer justo da parceira de projeto também machuca, né?",
       "next": "ep2_corredor_01"
     },
     "ep2_copa_f": {
@@ -460,8 +460,8 @@
       "characterId": "fernanda",
       "expression": "neutral",
       "background": "copa",
-      "text": "...Não. Fiquei com medo da resposta. Se ele disser que só esqueceu, dói do mesmo jeito.",
-      "bgm": "romance",
+      "text": "...Ainda não. Fiquei com receio dele vir com alguma desculpa esfarrapada de que perdeu o prazo de cadastrar coautor.",
+      "bgm": "casual",
       "next": "ep2_corredor_01"
     },
     "ep2_corredor_01": {

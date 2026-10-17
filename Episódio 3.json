@@ -509,7 +509,7 @@
       "expression": null,
       "background": "central_room",
       "text": "Quando o grupo se dispersa, Daniel respira fundo, tira um envelope da mochila e caminha até Fernanda, que observava tudo de longe.",
-      "bgm": "romance",
+      "bgm": "casual",
       "next": "ep3_fer_02"
     },
     "ep3_fer_02": {
@@ -518,8 +518,8 @@
       "characterId": "daniel",
       "expression": "awkward",
       "background": "central_room",
-      "text": "Fernanda. Isso aqui é o artigo completo do nosso protocolo. O resumo do congresso só aceitava o nome de quem apresenta. Mas no artigo... olha quem é a primeira autora.",
-      "bgm": "romance",
+      "text": "Fernanda. Isso aqui é o artigo completo do nosso protocolo. O sistema do resumo curto só aceitava o nome do apresentador. Mas no artigo... olha quem é a primeira autora.",
+      "bgm": "casual",
       "next": "ep3_fer_03"
     },
     "ep3_fer_03": {
@@ -529,7 +529,7 @@
       "expression": "neutral",
       "background": "central_room",
       "text": "(Ela abre o envelope devagar. O nome dela está lá, no topo.) ...Primeira autora. Daniel, por que você não me disse isso antes?",
-      "bgm": "romance",
+      "bgm": "casual",
       "next": "ep3_fer_04"
     },
     "ep3_fer_04": {
@@ -538,8 +538,8 @@
       "characterId": "daniel",
       "expression": "neutral",
       "background": "central_room",
-      "text": "Porque eu queria te entregar pronto. Eu sempre deixo as coisas importantes pra depois, achando que vai dar tempo. Fiz isso com o artigo. E fiz isso com a gente, lá atrás.",
-      "bgm": "romance",
+      "text": "Porque eu queria te fazer uma surpresa com o manuscrito pronto! Eu sei que sou atrapalhado e deixo tudo pra última hora, mas jamais ia esquecer quem construiu esse protocolo comigo desde o dia zero. Você é minha parceira de trincheira, Fernanda.",
+      "bgm": "casual",
       "next": "ep3_fer_05"
     },
     "ep3_fer_05": {
@@ -548,11 +548,11 @@
       "characterId": "fernanda",
       "expression": "warm",
       "background": "central_room",
-      "text": "(Ela fica em silêncio por um longo momento, e então sorri de canto.) ...Olha só. Pela primeira vez, você pensou em algo sozinho. E pensou certo.",
-      "bgm": "romance",
+      "text": "(Ela fica em silêncio por um segundo e solta um riso aliviado.) ...Olha só. Pela primeira vez, você pensou em algo sozinho. E pensou certo, seu cabeçudo.",
+      "bgm": "casual",
       "choices": [
         {
-          "text": "(Afastar-se discretamente e deixar os dois conversarem.)",
+          "text": "(Sorrir vendo a paz selada entre os amigos do Grupo Antigo.)",
           "lomChange": { "fernanda": 5, "daniel": 5 },
           "next": "ep3_fer_a"
         },
@@ -562,8 +562,8 @@
           "next": "ep3_fer_b"
         },
         {
-          "text": "Então quer dizer que vocês dois...?",
-          "lomChange": { "fernanda": -5 },
+          "text": "Sabia que você só era desorganizado, Daniel, mas nunca traíra de bancada!",
+          "lomChange": { "fernanda": 5, "daniel": 5 },
           "next": "ep3_fer_c"
         }
       ]
@@ -574,8 +574,8 @@
       "characterId": "fernanda",
       "expression": "warm",
       "background": "central_room",
-      "text": "(Antes de você se afastar, Fernanda te olha e faz um 'obrigada' sem som, só com os lábios.)",
-      "bgm": "romance",
+      "text": "(Fernanda dá um soquinho leve no ombro do Daniel e pisca pra você, agradecendo pelo apoio.)",
+      "bgm": "casual",
       "next": "ep3_samara_01"
     },
     "ep3_fer_b": {
@@ -591,9 +591,9 @@
       "id": "ep3_fer_c",
       "speaker": "Fernanda",
       "characterId": "fernanda",
-      "expression": "eye_roll",
+      "expression": "teasing",
       "background": "central_room",
-      "text": "Não força. Uma conversa de cada vez. (Mas ela não solta o envelope.)",
+      "text": "Desorganizado é elogio pra ele! Mas dessa vez está perdoado. (Ela guarda o artigo com orgulho na pasta.)",
       "next": "ep3_samara_01"
     },
     "ep3_samara_01": {
@@ -686,7 +686,7 @@
       "characterId": "will",
       "expression": "tea_spilling",
       "background": "copa",
-      "text": "(Com o olhar mais plácido do mundo) Daniel e Fernanda dividindo café, Sérgio rindo de verdade, Gabriel quase sorrindo... Essa semana rendeu mais que novela das nove. E você, meu bem, foi o roteiro inteiro.",
+      "text": "(Com o olhar mais plácido do mundo) O Grupo Antigo em paz de novo, Sérgio rindo de verdade, Gabriel quase sorrindo... Essa semana rendeu mais que novela das nove. E você, meu bem, foi o roteiro inteiro.",
       "bgm": "casual",
       "next": "ep3_end"
     },
